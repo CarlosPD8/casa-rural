@@ -16,9 +16,9 @@ export default function Carousel({
     () =>
       images ?? [
         { src: "/photos/casa-1.jpeg", alt: "Salón principal de la casa rural" },
-        { src: "/photos/casa-1.jpeg", alt: "Zona de estar amplia y luminosa" },
-        { src: "/photos/casa-1.jpeg", alt: "Cocina totalmente equipada" },
-        { src: "/photos/casa-1.jpeg", alt: "Habitación confortable" },
+        { src: "/photos/casa-2.jpg", alt: "Zona de estar amplia y luminosa" },
+        { src: "/photos/casa-3.jpg", alt: "Cocina totalmente equipada" },
+        { src: "/photos/casa-4.jpg", alt: "Habitación confortable" },
       ],
     [images]
   );
