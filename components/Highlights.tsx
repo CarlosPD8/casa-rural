@@ -12,29 +12,18 @@ export default function Highlights() {
   ];
 
   return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap gap-3">
-        {items.map((it) => (
-          <div
-            key={it.label}
-            className="rounded-2xl bg-white/80 backdrop-blur border border-black/5 px-4 py-3 shadow-sm"
-          >
-            <div className="text-xs uppercase tracking-wide opacity-70">
-              {it.label}
-            </div>
-            <div className="text-base font-semibold">{it.value}</div>
+    <div className="flex flex-wrap gap-3">
+      {items.map((it) => (
+        <div
+          key={it.label}
+          className="rounded-2xl bg-white/80 backdrop-blur border border-black/5 px-4 py-3 shadow-sm"
+        >
+          <div className="text-xs uppercase tracking-wide opacity-70">
+            {it.label}
           </div>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap gap-3">
-        <a href="#contacto" className="btn-primary btn">
-          Consultar disponibilidad
-        </a>
-        <a href="#opiniones" className="btn-secondary btn">
-          Ver opiniones
-        </a>
-      </div>
+          <div className="text-base font-semibold">{it.value}</div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -102,13 +102,6 @@ export default function ContactForm() {
               </a>
             </p>
           </div>
-
-          <div className="rounded-2xl border border-black/5 bg-[var(--brown-100)] p-4">
-            <p className="opacity-85">
-              Cuando quieras lo conectamos para que envíe correos al dueño (por
-              ejemplo con Resend o Nodemailer en Vercel).
-            </p>
-          </div>
         </aside>
       </div>
     </section>
