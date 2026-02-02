@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
+/* Paleta pastel marrón */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brown-50: #faf7f3;
+  --brown-100: #f3ece5;
+  --brown-200: #e6d7cc;
+  --brown-400: #c3a58b;
+  --brown-600: #8b6342;
+  --brown-800: #5b3f2c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--brown-800);
+  background: radial-gradient(1200px 600px at 20% 10%, var(--brown-100), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, #ffffff, transparent 55%),
+    linear-gradient(135deg, var(--brown-50), #ffffff);
+}
+
+/* Helpers */
+.container-page {
+  max-width: 72rem; /* ~ max-w-6xl */
+  margin-inline: auto;
+  padding-inline: 1.5rem; /* px-6 */
+}
+
+.card {
+  background: white;
+  border-radius: 1.25rem; /* rounded-2xl */
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  padding: 1.5rem; /* p-6 */
+  border: 1px solid rgba(91,63,44,.08);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .85rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: white;
+  background: linear-gradient(90deg, var(--brown-600), var(--brown-800));
+  box-shadow: 0 12px 24px rgba(91,63,44,.18);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 16px 34px rgba(91,63,44,.24);
+}
+
+.btn-secondary {
+  color: var(--brown-800);
+  background: linear-gradient(90deg, #ffffff, var(--brown-100));
+  border: 1px solid rgba(91,63,44,.12);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.10);
 }
