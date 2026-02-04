@@ -3,6 +3,7 @@ import Highlights from "@/components/Highlights";
 import Amenities from "@/components/Amenities";
 import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
+import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 
 export default function Home() {
   return (
@@ -80,12 +81,13 @@ export default function Home() {
                 ))}
               </ul>
 
-              {/* Highlights + CTAs ABAJO */}
-              <div className="space-y-6 pt-2">
+              {/* Highlights + CTAs */}
+              <div className="space-y-5 pt-2">
                 <Highlights />
 
                 <div className="flex flex-wrap gap-3">
-                  <a href="#contacto" className="btn btn-primary">
+                  {/* ✅ ahora va a disponibilidad */}
+                  <a href="#disponibilidad" className="btn btn-primary">
                     Consultar disponibilidad
                   </a>
                   <a href="#opiniones" className="btn btn-secondary">
@@ -107,19 +109,16 @@ export default function Home() {
               />
               <Carousel />
               <div className="mt-4 flex flex-wrap gap-2">
-                {[
-                  "Acogedora",
-                  "Amplia",
-                  "Luminosa",
-                  "Perfecta para grupos",
-                ].map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-black/5 bg-white/75 backdrop-blur px-4 py-2 text-sm shadow-sm"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                {["Acogedora", "Amplia", "Luminosa", "Perfecta para grupos"].map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-black/5 bg-white/75 backdrop-blur px-4 py-2 text-sm shadow-sm"
+                    >
+                      {tag}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -134,6 +133,20 @@ export default function Home() {
               "linear-gradient(90deg, transparent, rgba(91,63,44,.18), transparent)",
           }}
         />
+      </section>
+
+      {/* ✅ DISPONIBILIDAD EN HOME */}
+      <section id="disponibilidad" className="container-page scroll-mt-24">
+        <header className="space-y-3 mb-8">
+          <h2 className="text-3xl font-bold">Disponibilidad</h2>
+          <p className="max-w-2xl opacity-80">
+            Consulta de forma rápida qué días están libres u ocupados. Para
+            reservar, envíanos un mensaje con las fechas y el número de
+            personas.
+          </p>
+        </header>
+
+        <AvailabilityCalendar mode="public" />
       </section>
 
       {/* CONTENT */}
