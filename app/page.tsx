@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import LocationMap from "@/components/LocationMap";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -178,10 +179,8 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <footer className="container-page pb-10 text-sm opacity-70">
-        © {new Date().getFullYear()} Casa Rural en Granada — Todos los derechos
-        reservados.
-      </footer>
+      <Footer />
+
     </main>
   );
 }
