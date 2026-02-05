@@ -136,7 +136,18 @@ export default function Home() {
         />
       </section>
 
-      {/* ✅ DISPONIBILIDAD EN HOME */}
+     
+
+      {/* CONTENT */}
+      <section className="container-page">
+        <Amenities />
+      </section>
+
+      <section className="container-page">
+        <Testimonials />
+      </section>
+
+       {/* ✅ DISPONIBILIDAD EN HOME */}
       <section id="disponibilidad" className="container-page scroll-mt-24">
         <header className="space-y-3 mb-8">
           <h2 className="text-3xl font-bold">Disponibilidad</h2>
@@ -148,15 +159,6 @@ export default function Home() {
         </header>
 
         <AvailabilityCalendar mode="public" />
-      </section>
-
-      {/* CONTENT */}
-      <section className="container-page">
-        <Amenities />
-      </section>
-
-      <section className="container-page">
-        <Testimonials />
       </section>
 
       <section className="container-page">
