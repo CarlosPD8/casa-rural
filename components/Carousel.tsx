@@ -112,8 +112,8 @@ export default function Carousel({
               className={[
                 "h-2.5 rounded-full transition-all",
                 i === index
-                  ? "w-8 bg-[var(--brown-800)] shadow-md"
-                  : "w-2.5 bg-[var(--brown-300)] hover:bg-[var(--brown-500)]",
+                  ? "w-8 bg-[rgb(var(--primary-dark))] shadow-md"
+                  : "w-2.5 bg-[rgb(var(--border)/0.20)] hover:bg-[rgb(var(--primary))]",
               ].join(" ")}
             />
           ))}

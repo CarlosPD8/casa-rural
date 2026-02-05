@@ -1,25 +1,83 @@
 @import "tailwindcss";
 
-/* Paleta pastel marrón */
-:root {
-  --brown-50: #faf7f3;
-  --brown-100: #f3ece5;
-  --brown-200: #e6d7cc;
-  --brown-400: #c3a58b;
-  --brown-600: #8b6342;
-  --brown-800: #5b3f2c;
+/* =========================
+   PALETA PRIMAVERAL (VERDES)
+   ========================= */
+:root{
+  /* Paleta A — Oliva suave */
+  --primary: 79 138 91;         /* #4F8A5B */
+  --primary-dark: 62 111 74;    /* #3E6F4A */
+  --primary-light: 111 174 133; /* #6FAE85 */
+
+    /* === FONDOS VERDES SUAVES === */
+  --bg-main: 247 250 248;      /* casi blanco verdoso */
+  --bg-soft-1: 235 245 239;    /* verde muy claro */
+  --bg-soft-2: 225 238 230;    /* verde pastel */
+  --bg-soft-3: 214 232 221;    /* un pelín más marcado */
+
+  --bg: 247 250 248;            /* #F7FAF8 */
+  --surface: 255 255 255;       /* #FFFFFF */
+  --muted: 232 243 236;         /* #E8F3EC */
+  --text: 31 41 55;             /* #1F2937 */
+
+  --border: 31 41 55;           /* se usa con /opacity */
 }
 
-/* Base */
+/* =========================
+   BASE
+   ========================= */
 body {
   margin: 0;
   min-height: 100vh;
-  color: var(--brown-800);
+  color: rgb(var(--text));
+
   background:
-    radial-gradient(1200px 600px at 15% 10%, var(--brown-100), transparent 60%),
-    radial-gradient(900px 500px at 85% 15%, #ffffff, transparent 55%),
-    linear-gradient(135deg, var(--brown-50), #ffffff);
+    radial-gradient(
+      1200px 600px at 10% 5%,
+      rgb(var(--bg-soft-1)),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 90% 10%,
+      rgb(var(--bg-soft-2)),
+      transparent 55%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(var(--bg-main)),
+      rgb(var(--surface))
+    );
 }
+
+section.container-page {
+  position: relative;
+}
+
+section.container-page::before {
+  content: "";
+  position: absolute;
+  inset: -2rem 0;
+  z-index: -1;
+  background:
+    radial-gradient(
+      800px 400px at 50% 0%,
+      rgba(var(--primary), 0.04),
+      transparent 70%
+    );
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgb(var(--primary) / 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, rgb(var(--primary-light) / 0.04) 0%, transparent 45%);
+}
+
 
 /* Layout helpers */
 .container-page {
@@ -29,27 +87,28 @@ body {
 }
 
 /* =========================
-   TARJETAS (MEJORADAS)
+   TARJETAS (VERDES + MÁS VIVAS)
    ========================= */
 
 .card {
   position: relative;
   background:
-    linear-gradient(180deg, #ffffff, var(--brown-50));
+    linear-gradient(180deg, rgb(var(--surface)), rgb(var(--muted)));
   border-radius: 1.5rem;
   padding: 1.75rem;
 
   /* Borde elegante */
-  border: 1px solid rgba(91, 63, 44, 0.12);
+  border: 1px solid rgb(var(--border) / 0.12);
 
   /* Sombra más visible */
   box-shadow:
-    0 20px 40px rgba(91, 63, 44, 0.18),
-    0 4px 10px rgba(0, 0, 0, 0.06);
+    0 20px 40px rgb(var(--primary) / 0.12),
+    0 4px 10px rgb(0 0 0 / 0.06);
 
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 /* Glow suave interior */
@@ -62,18 +121,19 @@ body {
   background:
     linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.6),
+      rgb(var(--surface) / 0.70),
       transparent 40%
     );
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* Hover */
 .card:hover {
   transform: translateY(-6px);
+  border-color: rgb(var(--primary) / 0.18);
   box-shadow:
-    0 28px 60px rgba(91, 63, 44, 0.28),
-    0 10px 20px rgba(0, 0, 0, 0.08);
+    0 28px 60px rgb(var(--primary) / 0.20),
+    0 10px 20px rgb(0 0 0 / 0.08);
 }
 
 /* =========================
@@ -91,7 +151,8 @@ body {
   transition:
     transform .15s ease,
     box-shadow .15s ease,
-    filter .15s ease;
+    filter .15s ease,
+    background .15s ease;
   user-select: none;
   text-decoration: none;
 }
@@ -100,29 +161,29 @@ body {
   color: white;
   background: linear-gradient(
     90deg,
-    var(--brown-600),
-    var(--brown-800)
+    rgb(var(--primary)),
+    rgb(var(--primary-dark))
   );
   box-shadow:
-    0 14px 28px rgba(91, 63, 44, 0.35);
+    0 14px 28px rgb(var(--primary) / 0.28);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px) scale(1.02);
   filter: brightness(1.06);
   box-shadow:
-    0 20px 40px rgba(91, 63, 44, 0.45);
+    0 20px 40px rgb(var(--primary) / 0.38);
 }
 
 .btn-secondary {
-  color: var(--brown-800);
+  color: rgb(var(--text));
   background:
-    linear-gradient(90deg, #ffffff, var(--brown-100));
-  border: 1px solid rgba(91, 63, 44, 0.2);
+    linear-gradient(90deg, rgb(var(--surface)), rgb(var(--muted)));
+  border: 1px solid rgb(var(--border) / 0.16);
 }
 
 .btn-secondary:hover {
   transform: translateY(-1px);
   box-shadow:
-    0 14px 30px rgba(0, 0, 0, 0.15);
+    0 14px 30px rgb(0 0 0 / 0.12);
 }

@@ -33,13 +33,13 @@ export default function Amenities() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full bg-[var(--brown-100)] px-4 py-2 border border-black/5">
+            <span className="rounded-full bg-[rgb(var(--muted))] px-4 py-2 border border-black/5">
               Check-in flexible (si aplica)
             </span>
-            <span className="rounded-full bg-[var(--brown-100)] px-4 py-2 border border-black/5">
+            <span className="rounded-full bg-[rgb(var(--muted))] px-4 py-2 border border-black/5">
               Entorno tranquilo
             </span>
-            <span className="rounded-full bg-[var(--brown-100)] px-4 py-2 border border-black/5">
+            <span className="rounded-full bg-[rgb(var(--muted))] px-4 py-2 border border-black/5">
               Cerca de Granada
             </span>
           </div>
@@ -50,7 +50,7 @@ export default function Amenities() {
           <ul className="space-y-2">
             {amenities.map((a) => (
               <li key={a} className="flex gap-3">
-                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-[var(--brown-600)]" />
+                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-[rgb(var(--primary))]" />
                 <span className="opacity-85">{a}</span>
               </li>
             ))}

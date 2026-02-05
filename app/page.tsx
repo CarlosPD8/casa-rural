@@ -13,25 +13,35 @@ export default function Home() {
       <section className="relative overflow-hidden">
         {/* Background decor */}
         <div
-          aria-hidden
-          className="absolute inset-0 -z-10"
-          style={{
-            background:
-              "radial-gradient(900px 500px at 20% 10%, rgba(139,99,66,.18), transparent 60%)," +
-              "radial-gradient(700px 450px at 90% 20%, rgba(195,165,139,.22), transparent 55%)," +
-              "linear-gradient(135deg, rgba(250,247,243,1), rgba(255,255,255,1))",
-          }}
-        />
-        <div
-          aria-hidden
-          className="absolute -top-24 -left-24 h-80 w-80 rounded-full blur-3xl opacity-50 -z-10"
-          style={{ background: "rgba(139,99,66,.18)" }}
-        />
-        <div
-          aria-hidden
-          className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full blur-3xl opacity-40 -z-10"
-          style={{ background: "rgba(195,165,139,.25)" }}
-        />
+  aria-hidden
+  className="absolute inset-0 -z-10"
+  style={{
+    background: `
+      radial-gradient(800px 600px at 15% 20%, rgb(var(--primary) / 0.35), transparent 65%),
+      radial-gradient(700px 500px at 80% 15%, rgb(var(--primary-light) / 0.30), transparent 60%),
+      radial-gradient(600px 600px at 70% 80%, rgb(var(--primary-dark) / 0.22), transparent 65%),
+      radial-gradient(900px 500px at 30% 85%, rgb(var(--primary-light) / 0.18), transparent 70%),
+      linear-gradient(
+        135deg,
+        rgb(var(--bg)),
+        rgb(var(--surface))
+      )
+    `,
+  }}
+/>
+
+      <div
+  aria-hidden
+  className="absolute -top-32 -left-32 h-[28rem] w-[28rem] rounded-full blur-[100px] opacity-60 -z-10"
+  style={{ background: "rgb(var(--primary) / 0.35)" }}
+/>
+
+<div
+  aria-hidden
+  className="absolute -bottom-40 -right-40 h-[32rem] w-[32rem] rounded-full blur-[120px] opacity-50 -z-10"
+  style={{ background: "rgb(var(--primary-light) / 0.35)" }}
+/>
+
 
         <div className="container-page pt-16 pb-12">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -41,7 +51,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 backdrop-blur px-4 py-2 shadow-sm">
                 <span
                   className="inline-block h-2.5 w-2.5 rounded-full"
-                  style={{ background: "var(--brown-600)" }}
+                  style={{ background: "rgb(var(--primary))" }}
                 />
                 <span className="text-sm font-semibold">
                   Casa rural en Granada · Naturaleza · Tranquilidad
@@ -75,7 +85,7 @@ export default function Home() {
                   >
                     <span
                       className="mt-1 inline-block h-3 w-3 rounded-full"
-                      style={{ background: "var(--brown-600)" }}
+                      style={{ background: "rgb(var(--primary))" }}
                     />
                     <span className="opacity-90">{t}</span>
                   </li>
@@ -87,7 +97,6 @@ export default function Home() {
                 <Highlights />
 
                 <div className="flex flex-wrap gap-3">
-                  {/* ✅ ahora va a disponibilidad */}
                   <a href="#disponibilidad" className="btn btn-primary">
                     Consultar disponibilidad
                   </a>
@@ -105,7 +114,10 @@ export default function Home() {
                 className="absolute -inset-6 rounded-[2rem] -z-10 blur-2xl opacity-60"
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(139,99,66,.22), rgba(195,165,139,.18), rgba(255,255,255,.35))",
+                    `linear-gradient(135deg, ` +
+                    `rgb(var(--primary) / 0.18), ` +
+                    `rgb(var(--primary-light) / 0.14), ` +
+                    `rgb(var(--surface) / 0.35))`,
                 }}
               />
               <Carousel />
@@ -130,24 +142,21 @@ export default function Home() {
           aria-hidden
           className="h-px w-full"
           style={{
-            background:
-              "linear-gradient(90deg, transparent, rgba(91,63,44,.18), transparent)",
+            background: `linear-gradient(90deg, transparent, rgb(var(--primary) / 0.18), transparent)`,
           }}
         />
       </section>
-
-     
 
       {/* CONTENT */}
       <section className="container-page">
         <Amenities />
       </section>
 
-      <section className="container-page">
+      <section id="opiniones" className="container-page scroll-mt-24">
         <Testimonials />
       </section>
 
-       {/* ✅ DISPONIBILIDAD EN HOME */}
+      {/* DISPONIBILIDAD EN HOME */}
       <section id="disponibilidad" className="container-page scroll-mt-24">
         <header className="space-y-3 mb-8">
           <h2 className="text-3xl font-bold">Disponibilidad</h2>

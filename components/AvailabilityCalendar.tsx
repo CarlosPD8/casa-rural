@@ -7,7 +7,7 @@ import "react-day-picker/dist/style.css";
 type RangeRow = {
   id: string;
   start_date: string; // YYYY-MM-DD
-  end_date: string;   // YYYY-MM-DD
+  end_date: string; // YYYY-MM-DD
   note: string | null;
 };
 
@@ -25,7 +25,11 @@ function dateToYMDLocal(d: Date) {
   return `${y}-${m}-${da}`;
 }
 
-export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode }) {
+export default function AvailabilityCalendar({
+  mode = "public",
+}: {
+  mode?: Mode;
+}) {
   const [ranges, setRanges] = useState<RangeRow[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -111,7 +115,7 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
         <div className="flex items-center gap-2">
           <span
             className="inline-block h-3 w-3 rounded-sm border border-black/10"
-            style={{ background: "var(--brown-200)" }}
+            style={{ background: "rgb(var(--primary-light) / 0.35)" }}
           />
           <span className="opacity-80">Ocupado</span>
         </div>
@@ -127,8 +131,8 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
             modifiers={{ blocked: blockedRanges }}
             modifiersStyles={{
               blocked: {
-                background: "var(--brown-200)",
-                color: "var(--brown-800)",
+                background: "rgb(var(--primary-light) / 0.35)",
+                color: "rgb(var(--primary-dark))",
                 opacity: 0.95,
               },
             }}
@@ -146,13 +150,13 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
             modifiers={{ blocked: blockedRanges }}
             modifiersStyles={{
               blocked: {
-                background: "var(--brown-200)",
-                color: "var(--brown-800)",
+                background: "rgb(var(--primary-light) / 0.35)",
+                color: "rgb(var(--primary-dark))",
                 opacity: 0.95,
               },
               disabled: {
-                background: "var(--brown-200)",
-                color: "var(--brown-800)",
+                background: "rgb(var(--primary-light) / 0.35)",
+                color: "rgb(var(--primary-dark))",
                 opacity: 0.95,
               },
             }}
@@ -161,9 +165,10 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
       </div>
 
       {mode === "public" ? (
-        <div className="rounded-2xl border border-black/5 bg-[var(--brown-100)] p-4">
+        <div className="rounded-2xl border border-black/5 bg-[rgb(var(--muted))] p-4">
           <div className="text-sm opacity-80">
-            Para reservar, usa el formulario de contacto indicando fechas y número de personas.
+            Para reservar, usa el formulario de contacto indicando fechas y
+            número de personas.
           </div>
         </div>
       ) : (
@@ -182,7 +187,8 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
               disabled={!selected?.from || !selected?.to}
               style={{
                 opacity: !selected?.from || !selected?.to ? 0.6 : 1,
-                cursor: !selected?.from || !selected?.to ? "not-allowed" : "pointer",
+                cursor:
+                  !selected?.from || !selected?.to ? "not-allowed" : "pointer",
               }}
             >
               Bloquear rango
@@ -205,7 +211,9 @@ export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode 
                       <div className="font-semibold">
                         {r.start_date} → {r.end_date}
                       </div>
-                      {r.note ? <div className="text-sm opacity-75">{r.note}</div> : null}
+                      {r.note ? (
+                        <div className="text-sm opacity-75">{r.note}</div>
+                      ) : null}
                     </div>
                     <button
                       type="button"
