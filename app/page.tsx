@@ -7,6 +7,8 @@ import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
 
+
+
 export default function Home() {
   return (
     <main className="space-y-24">
@@ -149,7 +151,7 @@ export default function Home() {
       </section>
 
       {/* CONTENT */}
-      <section className="container-page">
+      <section id="la-casa" className="container-page">
         <Amenities />
       </section>
 
@@ -171,11 +173,11 @@ export default function Home() {
         <AvailabilityCalendar mode="public" />
       </section>
 
-      <section className="container-page">
+      <section id="ubicacion" className="container-page">
         <LocationMap />
       </section>
 
-      <section className="container-page pb-24">
+      <section id="contacto" className="container-page pb-24">
         <ContactForm />
       </section>
 

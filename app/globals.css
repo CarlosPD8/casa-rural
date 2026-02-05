@@ -23,6 +23,11 @@
   --border: 31 41 55;           /* se usa con /opacity */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* =========================
    BASE
    ========================= */
