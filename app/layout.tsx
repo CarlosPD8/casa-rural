@@ -1,5 +1,6 @@
 import "./globals.css";
 import { siteConfig } from "./siteConfig";
+import WhatsappButton from "@/components/WhatsappButton";
 
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -26,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+      {children} 
+      <WhatsappButton />
+      </body>
     </html>
   );
 }
