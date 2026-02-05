@@ -4,6 +4,7 @@ import Amenities from "@/components/Amenities";
 import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
+import LocationMap from "@/components/LocationMap";
 
 export default function Home() {
   return (
@@ -156,6 +157,10 @@ export default function Home() {
 
       <section className="container-page">
         <Testimonials />
+      </section>
+
+      <section className="container-page">
+        <LocationMap />
       </section>
 
       <section className="container-page pb-24">
