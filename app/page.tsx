@@ -151,7 +151,7 @@ export default function Home() {
       </section>
 
       {/* CONTENT */}
-      <section id="la-casa" className="container-pagescroll-mt-24">
+      <section id="la-casa" className="container-page scroll-mt-24">
         <Amenities />
       </section>
 
@@ -177,7 +177,7 @@ export default function Home() {
         <LocationMap />
       </section>
 
-      <section id="contacto" className="container-page pb-24">
+      <section id="contacto" className="container-page scroll-mt-24">
         <ContactForm />
       </section>
 
