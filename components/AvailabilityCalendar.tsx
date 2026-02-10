@@ -167,7 +167,7 @@ export default function AvailabilityCalendar({
       {mode === "public" ? (
         <div className="rounded-2xl border border-black/5 bg-[rgb(var(--muted))] p-4">
           <div className="text-sm opacity-80 font-bold">
-            ⚠️ Este calendario es solo informativo, para reservar, usa el formulario de contacto indicando fechas y número de personas.
+            ⚠️ Este calendario es solo informativo. Para reservar, usa el formulario de contacto indicando fechas y número de personas.
           </div>
         </div>
       ) : (
