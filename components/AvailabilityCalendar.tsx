@@ -166,9 +166,8 @@ export default function AvailabilityCalendar({
 
       {mode === "public" ? (
         <div className="rounded-2xl border border-black/5 bg-[rgb(var(--muted))] p-4">
-          <div className="text-sm opacity-80">
-            Para reservar, usa el formulario de contacto indicando fechas y
-            número de personas.
+          <div className="text-sm opacity-80 font-bold">
+            ⚠️ Para reservar, usa el formulario de contacto indicando fechas y número de personas.
           </div>
         </div>
       ) : (
