@@ -151,7 +151,7 @@ export default function Home() {
       </section>
 
       {/* CONTENT */}
-      <section id="la-casa" className="container-page">
+      <section id="la-casa" className="container-pagescroll-mt-24">
         <Amenities />
       </section>
 
@@ -173,7 +173,7 @@ export default function Home() {
         <AvailabilityCalendar mode="public" />
       </section>
 
-      <section id="ubicacion" className="container-page">
+      <section id="ubicacion" className="container-page scroll-mt-24">
         <LocationMap />
       </section>
 
