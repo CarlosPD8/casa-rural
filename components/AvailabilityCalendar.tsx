@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { DayPicker, DateRange } from "react-day-picker";
 import "react-day-picker/dist/style.css";
+import { useTranslations } from "next-intl";
 
 type RangeRow = {
   id: string;
@@ -25,11 +26,9 @@ function dateToYMDLocal(d: Date) {
   return `${y}-${m}-${da}`;
 }
 
-export default function AvailabilityCalendar({
-  mode = "public",
-}: {
-  mode?: Mode;
-}) {
+export default function AvailabilityCalendar({ mode = "public" }: { mode?: Mode }) {
+  const t = useTranslations("availability");
+
   const [ranges, setRanges] = useState<RangeRow[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -93,31 +92,29 @@ export default function AvailabilityCalendar({
       <div className="flex items-center justify-between gap-4 flex-wrap">
         <div>
           <h3 className="text-xl font-semibold">
-            {mode === "admin" ? "Gestionar disponibilidad" : "Disponibilidad"}
+            {mode === "admin" ? t("adminTitle") : t("publicTitle")}
           </h3>
           <p className="opacity-80">
-            {mode === "admin"
-              ? "Selecciona un rango para bloquearlo o elimina bloqueos existentes."
-              : "Los días marcados como ocupados no están disponibles."}
+            {mode === "admin" ? t("adminSubtitle") : t("publicSubtitle")}
           </p>
         </div>
 
         <button className="btn btn-secondary" type="button" onClick={refresh}>
-          {loading ? "Cargando…" : "Actualizar"}
+          {loading ? t("loading") : t("refresh")}
         </button>
       </div>
 
       <div className="flex flex-wrap items-center gap-4 text-sm">
         <div className="flex items-center gap-2">
           <span className="inline-block h-3 w-3 rounded-sm border border-black/10 bg-white" />
-          <span className="opacity-80">Disponible</span>
+          <span className="opacity-80">{t("legendAvailable")}</span>
         </div>
         <div className="flex items-center gap-2">
           <span
             className="inline-block h-3 w-3 rounded-sm border border-black/10"
             style={{ background: "rgb(var(--primary-light) / 0.35)" }}
           />
-          <span className="opacity-80">Ocupado</span>
+          <span className="opacity-80">{t("legendBusy")}</span>
         </div>
       </div>
 
@@ -136,11 +133,7 @@ export default function AvailabilityCalendar({
                 opacity: 0.95,
               },
             }}
-            footer={
-              <div className="text-sm opacity-80">
-                Consejo: selecciona inicio y fin del rango en el calendario.
-              </div>
-            }
+            footer={<div className="text-sm opacity-80">{t("adminFooterTip")}</div>}
           />
         ) : (
           <DayPicker
@@ -166,9 +159,7 @@ export default function AvailabilityCalendar({
 
       {mode === "public" ? (
         <div className="rounded-2xl border border-black/5 bg-[rgb(var(--muted))] p-4">
-          <div className="text-sm opacity-80 font-bold">
-            ⚠️ Este calendario es solo informativo. Para reservar, usa el formulario de contacto indicando fechas y número de personas.
-          </div>
+          <div className="text-sm opacity-80 font-bold">{t("publicNote")}</div>
         </div>
       ) : (
         <div className="space-y-4">
@@ -177,7 +168,7 @@ export default function AvailabilityCalendar({
               value={note}
               onChange={(e) => setNote(e.target.value)}
               className="md:col-span-2 w-full rounded-xl border border-black/10 px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
-              placeholder="Nota opcional (Booking, Airbnb, teléfono...)"
+              placeholder={t("adminNotePlaceholder")}
             />
             <button
               className="btn btn-primary"
@@ -190,16 +181,16 @@ export default function AvailabilityCalendar({
                   !selected?.from || !selected?.to ? "not-allowed" : "pointer",
               }}
             >
-              Bloquear rango
+              {t("adminBlockRange")}
             </button>
           </div>
 
           <div className="space-y-3">
-            <div className="font-semibold">Rangos bloqueados</div>
+            <div className="font-semibold">{t("adminBlockedTitle")}</div>
 
             <div className="grid gap-3">
               {ranges.length === 0 ? (
-                <div className="opacity-70">No hay rangos bloqueados.</div>
+                <div className="opacity-70">{t("adminEmpty")}</div>
               ) : (
                 ranges.map((r) => (
                   <div
@@ -210,16 +201,14 @@ export default function AvailabilityCalendar({
                       <div className="font-semibold">
                         {r.start_date} → {r.end_date}
                       </div>
-                      {r.note ? (
-                        <div className="text-sm opacity-75">{r.note}</div>
-                      ) : null}
+                      {r.note ? <div className="text-sm opacity-75">{r.note}</div> : null}
                     </div>
                     <button
                       type="button"
                       className="btn btn-secondary"
                       onClick={() => removeRange(r.id)}
                     >
-                      Desbloquear
+                      {t("adminUnblock")}
                     </button>
                   </div>
                 ))

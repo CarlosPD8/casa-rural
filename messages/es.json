@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "house": "La casa",
+    "availability": "Disponibilidad",
+    "reviews": "Opiniones",
+    "location": "Ubicación",
+    "contact": "Contacto",
+    "book": "Reservar",
+    "tipTitle": "Consejo",
+    "tipBody": "Consulta disponibilidad y escríbenos por WhatsApp o el formulario."
+  },
+  "hero": {
+    "badge": "Casa rural en Granada",
+    "title": "Vivienda Rural Huerta del Medio",
+    "subtitle": "Naturaleza, calma y escapadas con encanto a un paso de Granada.",
+    "ctaAvailability": "Ver disponibilidad",
+    "ctaReviews": "Leer opiniones",
+    "tags": [
+      "Entorno natural",
+      "Ideal familias",
+      "Terraza & vistas",
+      "Tranquilidad"
+    ],
+    "bullets": [
+      "Alojamiento cómodo y luminoso",
+      "Entorno perfecto para desconectar",
+      "Cerca de Granada y rutas de senderismo",
+      "Atención cercana y rápida"
+    ]
+  },
+  "highlights": {
+    "capacity": "Capacidad",
+    "capacityValue": "{count} huéspedes",
+    "bedrooms": "Dormitorios",
+    "bathrooms": "Baños",
+    "size": "Superficie",
+    "area": "Zona"
+  },
+  "house": {
+    "title": "La casa",
+    "intro": "Un espacio pensado para descansar y disfrutar del entorno. Ideal para parejas, familias o pequeñas escapadas con amigos.",
+    "sectionTitle": "Confort y estilo rural",
+    "sectionBody": "Ambientes cuidados, luz natural y una distribución práctica para sentirse como en casa desde el primer día.",
+    "servicesTitle": "Servicios y comodidades",
+    "chips": [
+      "Cocina equipada",
+      "Wi-Fi",
+      "Aire acondicionado / calefacción",
+      "Parking cercano"
+    ],
+    "amenities": [
+      "Ropa de cama y toallas",
+      "Menaje completo",
+      "Zona exterior / terraza",
+      "Información local y recomendaciones",
+      "Entrada cómoda y flexible (según disponibilidad)"
+    ]
+  },
+  "reviews": {
+    "title": "Opiniones",
+    "subtitle": "Lo que dicen nuestros huéspedes sobre su estancia.",
+    "items": [
+      {
+        "name": "María",
+        "text": "Una estancia muy tranquila y acogedora. Perfecta para desconectar."
+      },
+      {
+        "name": "Javier",
+        "text": "La casa estaba impecable y la comunicación fue rapidísima."
+      },
+      {
+        "name": "Laura",
+        "text": "Ubicación ideal para visitar Granada y volver a descansar en calma."
+      }
+    ]
+  },
+  "availabilityHome": {
+    "title": "Disponibilidad",
+    "description": "Consulta las fechas disponibles y contáctanos para confirmar tu reserva."
+  },
+  "availability": {
+    "publicTitle": "Calendario de disponibilidad",
+    "publicSubtitle": "Las fechas marcadas están ocupadas. El resto, disponibles.",
+    "publicNote": "¿Te encajan las fechas? Escríbenos por WhatsApp o envía el formulario para confirmar.",
+    "legendAvailable": "Disponible",
+    "legendBusy": "Ocupado",
+    "refresh": "Actualizar",
+    "loading": "Cargando…",
+    "adminTitle": "Gestión de disponibilidad",
+    "adminSubtitle": "Bloquea rangos de fechas o elimina bloqueos existentes.",
+    "adminFooterTip": "Selecciona un rango de fechas para bloquearlo.",
+    "adminNotePlaceholder": "Nota (opcional): motivo o detalles",
+    "adminBlockRange": "Bloquear rango",
+    "adminBlockedTitle": "Rangos bloqueados",
+    "adminEmpty": "No hay rangos bloqueados.",
+    "adminUnblock": "Desbloquear"
+  },
+  "location": {
+    "title": "Ubicación",
+    "subtitle": "Una base perfecta para descubrir Granada y su entorno natural.",
+    "mapTitle": "Mapa de la casa rural"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Cuéntanos tus fechas y te respondemos lo antes posible.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phoneOptional": "Teléfono (opcional)",
+    "messagePlaceholder": "Mensaje (fechas, nº de personas, dudas…)",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "✅ Mensaje enviado. ¡Gracias! Te responderemos pronto.",
+    "errorDefault": "No se pudo enviar. Inténtalo de nuevo en unos minutos.",
+    "privacyNote": "Al enviar este formulario aceptas el tratamiento de tus datos para poder responder a tu consulta."
+  },
+  "footer": {
+    "aria": "Pie de página",
+    "brandTitle": "Vivienda Rural Huerta del Medio",
+    "brandSubtitle": "Granada · Naturaleza y descanso",
+    "brandBody": "Escápate a un entorno tranquilo y disfruta de una estancia cómoda cerca de Granada.",
+    "ctaContact": "Contactar",
+    "ctaAvailability": "Disponibilidad",
+    "sectionsTitle": "Secciones",
+    "sectionsAvailability": "Disponibilidad",
+    "sectionsReviews": "Opiniones",
+    "sectionsContact": "Contacto",
+    "infoTitle": "Información",
+    "infoLocationTitle": "Zona",
+    "infoLocationValue": "Granada (España)",
+    "infoBookingTitle": "Reservas",
+    "infoBookingValue": "WhatsApp o formulario",
+    "copyright": "© {year} Vivienda Rural Huerta del Medio. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "legal": "Aviso legal"
+  },
+  "whatsapp": {
+    "aria": "Contactar por WhatsApp",
+    "label": "WhatsApp",
+    "message": "Hola, estoy interesado/a en reservar. ¿Tenéis disponibilidad? Gracias."
+  }
+}

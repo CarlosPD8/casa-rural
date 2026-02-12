@@ -6,10 +6,10 @@ export const siteConfig = {
   locale: "es_ES",
 
   house: {
-    guests: 8,
+    guests: 10,
     bedrooms: 4,
     bathrooms: 2,
-    size: "180 m²",
+    size: "2000 m²",
     location: "Provincia de Granada",
   },
 

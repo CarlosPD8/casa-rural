@@ -1,18 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 type NavItem = { label: string; href: string };
 
-const NAV: NavItem[] = [
-  { label: "La casa", href: "#la-casa" },
-  { label: "Opiniones", href: "#opiniones" },
-  { label: "Disponibilidad", href: "#disponibilidad" },
-  { label: "Ubicación", href: "#ubicacion" },
-  { label: "Contacto", href: "#contacto" },
-];
-
 export default function Navbar() {
+  const locale = useLocale();
+  const t = useTranslations("nav");
+
+  const NAV: NavItem[] = useMemo(
+    () => [
+      { label: t("house"), href: `/${locale}#la-casa` },
+      { label: t("reviews"), href: `/${locale}#opiniones` },
+      { label: t("availability"), href: `/${locale}#disponibilidad` },
+      { label: t("location"), href: `/${locale}#ubicacion` },
+      { label: t("contact"), href: `/${locale}#contacto` }
+    ],
+    [t, locale]
+  );
+
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -23,7 +31,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Cerrar menú al navegar
   const onNavClick = () => setOpen(false);
 
   return (
@@ -38,7 +45,11 @@ export default function Navbar() {
       >
         <div className="container-page h-16 flex items-center justify-between">
           {/* Brand */}
-          <a href="#" className="flex items-center gap-3 group" onClick={onNavClick}>
+          <a
+            href={`/${locale}#`}
+            className="flex items-center gap-3 group"
+            onClick={onNavClick}
+          >
             <span
               aria-hidden
               className="h-10 w-10 rounded-2xl border border-black/5 shadow-sm transition-transform group-hover:scale-[1.02]"
@@ -48,13 +59,18 @@ export default function Navbar() {
               }}
             />
             <span className="leading-tight">
-              <span className="block font-bold">Vivienda Rural Huerta del Medio</span>
+              <span className="block font-bold">
+                Vivienda Rural Huerta del Medio
+              </span>
               <span className="block text-xs opacity-70">Granada</span>
             </span>
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-7" aria-label="Navegación principal">
+          <nav
+            className="hidden lg:flex items-center gap-7"
+            aria-label="Navegación principal"
+          >
             {NAV.map((item) => (
               <a
                 key={item.href}
@@ -65,15 +81,25 @@ export default function Navbar() {
               </a>
             ))}
 
-            <a href="#contacto" className="btn btn-primary">
-              Reservar
+            <LanguageSwitcher />
+
+            <a href={`/${locale}#contacto`} className="btn btn-primary">
+              {t("book")}
             </a>
           </nav>
 
           {/* Mobile controls */}
           <div className="lg:hidden flex items-center gap-2">
-            <a href="#contacto" className="btn btn-primary !px-4 !py-2" onClick={onNavClick}>
-              Reservar
+            <div className="hidden sm:block">
+              <LanguageSwitcher />
+            </div>
+
+            <a
+              href={`/${locale}#contacto`}
+              className="btn btn-primary !px-4 !py-2"
+              onClick={onNavClick}
+            >
+              {t("book")}
             </a>
 
             <button
@@ -112,6 +138,10 @@ export default function Navbar() {
         {open ? (
           <div className="lg:hidden border-t border-black/5 bg-white/80 backdrop-blur">
             <div className="container-page py-4">
+              <div className="mb-4">
+                <LanguageSwitcher />
+              </div>
+
               <nav aria-label="Menú móvil" className="grid gap-2">
                 {NAV.map((item) => (
                   <a
@@ -126,10 +156,8 @@ export default function Navbar() {
               </nav>
 
               <div className="mt-4 rounded-2xl border border-black/5 bg-[rgb(var(--muted))] p-4">
-                <div className="text-sm font-semibold">Consejo</div>
-                <div className="text-sm opacity-80">
-                  Consulta disponibilidad y escríbenos por WhatsApp o el formulario.
-                </div>
+                <div className="text-sm font-semibold">{t("tipTitle")}</div>
+                <div className="text-sm opacity-80">{t("tipBody")}</div>
               </div>
             </div>
           </div>

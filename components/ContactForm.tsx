@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Result =
   | { type: "idle" }
@@ -28,16 +29,13 @@ function getCookie(name: string) {
 }
 
 export default function ContactForm() {
+  const t = useTranslations("contact");
+
   const [result, setResult] = useState<Result>({ type: "idle" });
-
-  // ✅ startedAt se fija al cargar el componente (sin useEffect)
   const [startedAt, setStartedAt] = useState<number>(() => Date.now());
-
-  // CSRF token creado una vez por carga
   const csrf = useMemo(() => genToken(), []);
 
   useEffect(() => {
-    // Double-submit cookie
     setCookie("csrf", csrf);
   }, [csrf]);
 
@@ -56,7 +54,7 @@ export default function ContactForm() {
       email: String(fd.get("email") ?? "").trim().slice(0, 120),
       phone: String(fd.get("phone") ?? "").trim().slice(0, 40),
       message: String(fd.get("message") ?? "").trim().slice(0, 2000),
-      website: String(fd.get("website") ?? "").trim(), // honeypot
+      website: String(fd.get("website") ?? "").trim(),
       startedAt,
       csrf: getCookie("csrf") || csrf,
     };
@@ -78,32 +76,27 @@ export default function ContactForm() {
       if (!res.ok) {
         setResult({
           type: "error",
-          message: json?.error ?? "No se pudo enviar el mensaje.",
+          message: json?.error ?? t("errorDefault"),
         });
         return;
       }
 
       setResult({ type: "success" });
       formEl.reset();
-
-      // ✅ reiniciamos el timer anti-bot para el siguiente envío
       setStartedAt(Date.now());
     } catch {
-      setResult({ type: "error", message: "No se pudo enviar el mensaje." });
+      setResult({ type: "error", message: t("errorDefault") });
     }
   }
 
   return (
     <section id="contacto" className="space-y-6">
       <header className="space-y-2">
-        <h2 className="text-3xl font-bold">Contacto</h2>
-        <p className="max-w-2xl opacity-80">
-          Escríbenos para consultar disponibilidad, precios y cualquier duda. Te responderemos lo antes posible.
-        </p>
+        <h2 className="text-3xl font-bold">{t("title")}</h2>
+        <p className="max-w-2xl opacity-80">{t("subtitle")}</p>
       </header>
 
       <form onSubmit={onSubmit} className="card space-y-4" noValidate>
-        {/* Honeypot anti-spam */}
         <input
           name="website"
           className="hidden"
@@ -118,7 +111,7 @@ export default function ContactForm() {
             required
             minLength={2}
             maxLength={80}
-            placeholder="Nombre"
+            placeholder={t("name")}
             className="w-full rounded-xl border border-black/10 px-4 py-3 outline-none focus:ring-2 focus:ring-black/10 bg-white/80"
           />
           <input
@@ -126,7 +119,7 @@ export default function ContactForm() {
             type="email"
             required
             maxLength={120}
-            placeholder="Email"
+            placeholder={t("email")}
             className="w-full rounded-xl border border-black/10 px-4 py-3 outline-none focus:ring-2 focus:ring-black/10 bg-white/80"
           />
         </div>
@@ -135,7 +128,7 @@ export default function ContactForm() {
           name="phone"
           inputMode="tel"
           maxLength={40}
-          placeholder="Teléfono (opcional)"
+          placeholder={t("phoneOptional")}
           className="w-full rounded-xl border border-black/10 px-4 py-3 outline-none focus:ring-2 focus:ring-black/10 bg-white/80"
         />
 
@@ -144,20 +137,18 @@ export default function ContactForm() {
           required
           minLength={10}
           maxLength={2000}
-          placeholder="Cuéntanos fechas aproximadas, número de personas y cualquier detalle…"
+          placeholder={t("messagePlaceholder")}
           rows={5}
           className="w-full rounded-xl border border-black/10 px-4 py-3 outline-none focus:ring-2 focus:ring-black/10 bg-white/80 resize-none"
         />
 
         <div className="flex flex-wrap items-center gap-3">
           <button type="submit" className="btn btn-primary" disabled={isLoading}>
-            {isLoading ? "Enviando…" : "Enviar mensaje"}
+            {isLoading ? t("sending") : t("send")}
           </button>
 
           {result.type === "success" && (
-            <span className="text-sm opacity-80">
-              ✅ Mensaje enviado. ¡Gracias! Te responderemos en breve.
-            </span>
+            <span className="text-sm opacity-80">{t("success")}</span>
           )}
 
           {result.type === "error" && (
@@ -165,9 +156,7 @@ export default function ContactForm() {
           )}
         </div>
 
-        <p className="text-xs opacity-60">
-          Al enviar este formulario aceptas que usemos tu información únicamente para responder a tu solicitud.
-        </p>
+        <p className="text-xs opacity-60">{t("privacyNote")}</p>
       </form>
     </section>
   );

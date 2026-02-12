@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "house": "La maison",
+    "availability": "Disponibilités",
+    "reviews": "Avis",
+    "location": "Emplacement",
+    "contact": "Contact",
+    "book": "Réserver",
+    "tipTitle": "Conseil",
+    "tipBody": "Vérifiez les disponibilités et contactez-nous via WhatsApp ou le formulaire."
+  },
+  "hero": {
+    "badge": "Maison rurale à Grenade",
+    "title": "Maison Rurale Huerta del Medio",
+    "subtitle": "Nature, calme et escapades pleines de charme à deux pas de Grenade.",
+    "ctaAvailability": "Voir les disponibilités",
+    "ctaReviews": "Lire les avis",
+    "tags": [
+      "Cadre naturel",
+      "Idéal en famille",
+      "Terrasse & vues",
+      "Tranquillité"
+    ],
+    "bullets": [
+      "Hébergement confortable et lumineux",
+      "Un cadre parfait pour se déconnecter",
+      "Proche de Grenade et de sentiers",
+      "Réponse rapide et conviviale"
+    ]
+  },
+  "highlights": {
+    "capacity": "Capacité",
+    "capacityValue": "{count} voyageurs",
+    "bedrooms": "Chambres",
+    "bathrooms": "Salles de bain",
+    "size": "Surface",
+    "area": "Zone"
+  },
+  "house": {
+    "title": "La maison",
+    "intro": "Un lieu pensé pour se reposer et profiter des environs. Idéal pour les couples, les familles ou de petites escapades entre amis.",
+    "sectionTitle": "Confort avec une touche rurale",
+    "sectionBody": "Espaces soignés, lumière naturelle et agencement pratique pour se sentir chez soi dès le premier jour.",
+    "servicesTitle": "Services et équipements",
+    "chips": [
+      "Cuisine équipée",
+      "Wi-Fi",
+      "Climatisation / chauffage",
+      "Parking à proximité"
+    ],
+    "amenities": [
+      "Linge de lit et serviettes",
+      "Vaisselle complète",
+      "Espace extérieur / terrasse",
+      "Conseils et infos locales",
+      "Arrivée flexible (selon disponibilité)"
+    ]
+  },
+  "reviews": {
+    "title": "Avis",
+    "subtitle": "Ce que disent nos voyageurs de leur séjour.",
+    "items": [
+      {
+        "name": "Maria",
+        "text": "Un séjour très calme et chaleureux. Parfait pour se ressourcer."
+      },
+      {
+        "name": "Javier",
+        "text": "Maison impeccable et communication ultra rapide."
+      },
+      {
+        "name": "Laura",
+        "text": "Emplacement idéal pour visiter Grenade et revenir se reposer au calme."
+      }
+    ]
+  },
+  "availabilityHome": {
+    "title": "Disponibilités",
+    "description": "Consultez les dates disponibles et contactez-nous pour confirmer votre réservation."
+  },
+  "availability": {
+    "publicTitle": "Calendrier de disponibilité",
+    "publicSubtitle": "Les dates surlignées sont réservées. Le reste est disponible.",
+    "publicNote": "Les dates vous conviennent ? Écrivez-nous sur WhatsApp ou via le formulaire pour confirmer.",
+    "legendAvailable": "Disponible",
+    "legendBusy": "Réservé",
+    "refresh": "Actualiser",
+    "loading": "Chargement…",
+    "adminTitle": "Gestion des disponibilités",
+    "adminSubtitle": "Bloquez des plages de dates ou supprimez des blocages existants.",
+    "adminFooterTip": "Sélectionnez une plage de dates à bloquer.",
+    "adminNotePlaceholder": "Note (optionnelle) : raison ou détails",
+    "adminBlockRange": "Bloquer la plage",
+    "adminBlockedTitle": "Plages bloquées",
+    "adminEmpty": "Aucune plage bloquée.",
+    "adminUnblock": "Débloquer"
+  },
+  "location": {
+    "title": "Emplacement",
+    "subtitle": "Une base parfaite pour découvrir Grenade et la nature environnante.",
+    "mapTitle": "Carte de la maison rurale"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Indiquez vos dates et nous vous répondrons au plus vite.",
+    "name": "Nom",
+    "email": "E-mail",
+    "phoneOptional": "Téléphone (optionnel)",
+    "messagePlaceholder": "Message (dates, nombre de personnes, questions…)",
+    "send": "Envoyer",
+    "sending": "Envoi…",
+    "success": "✅ Message envoyé. Merci ! Nous vous répondrons bientôt.",
+    "errorDefault": "Envoi impossible. Réessayez dans quelques minutes.",
+    "privacyNote": "En envoyant ce formulaire, vous acceptez le traitement de vos données afin que nous puissions répondre à votre demande."
+  },
+  "footer": {
+    "aria": "Pied de page",
+    "brandTitle": "Maison Rurale Huerta del Medio",
+    "brandSubtitle": "Grenade · Nature et repos",
+    "brandBody": "Évadez-vous dans un cadre paisible et profitez d’un séjour confortable près de Grenade.",
+    "ctaContact": "Contacter",
+    "ctaAvailability": "Disponibilités",
+    "sectionsTitle": "Sections",
+    "sectionsAvailability": "Disponibilités",
+    "sectionsReviews": "Avis",
+    "sectionsContact": "Contact",
+    "infoTitle": "Informations",
+    "infoLocationTitle": "Zone",
+    "infoLocationValue": "Grenade (Espagne)",
+    "infoBookingTitle": "Réservations",
+    "infoBookingValue": "WhatsApp ou formulaire",
+    "copyright": "© {year} Maison Rurale Huerta del Medio. Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "legal": "Mentions légales"
+  },
+  "whatsapp": {
+    "aria": "Contacter via WhatsApp",
+    "label": "WhatsApp",
+    "message": "Bonjour ! Je souhaite réserver. Avez-vous des disponibilités ? Merci."
+  }
+}
