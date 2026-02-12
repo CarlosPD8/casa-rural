@@ -58,10 +58,7 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  // Aplica i18n a todo excepto:
-  // - /api (endpoints)
-  // - /_next (assets internos)
-  // - archivos estáticos (.*\..*)
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  matcher: ["/((?!api|_next|admin|.*\\..*).*)"],
 };
+
 
