@@ -139,5 +139,10 @@
     "aria": "Contactar por WhatsApp",
     "label": "WhatsApp",
     "message": "Olá! Tenho interesse em reservar. Têm disponibilidade? Obrigado."
-  }
+  },
+  "admin": {
+  "title": "Painel de administração",
+  "subtitle": "Gerir disponibilidade bloqueando ou libertando intervalos de datas."
+}
+
 }

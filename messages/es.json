@@ -139,5 +139,11 @@
     "aria": "Contactar por WhatsApp",
     "label": "WhatsApp",
     "message": "Hola, estoy interesado/a en reservar. ¿Tenéis disponibilidad? Gracias."
-  }
+  },
+
+  "admin": {
+  "title": "Panel de administración",
+  "subtitle": "Gestiona la disponibilidad bloqueando o liberando fechas."
+}
+
 }

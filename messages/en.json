@@ -139,5 +139,10 @@
     "aria": "Contact via WhatsApp",
     "label": "WhatsApp",
     "message": "Hi! I’m interested in booking. Do you have availability? Thank you."
-  }
+  },
+  "admin": {
+  "title": "Admin panel",
+  "subtitle": "Manage availability by blocking or freeing date ranges."
+}
+
 }

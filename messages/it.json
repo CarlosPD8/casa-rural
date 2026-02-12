@@ -139,5 +139,10 @@
     "aria": "Contattare via WhatsApp",
     "label": "WhatsApp",
     "message": "Ciao! Vorrei prenotare. Avete disponibilità? Grazie."
-  }
+  },
+  "admin": {
+  "title": "Pannello di amministrazione",
+  "subtitle": "Gestisci la disponibilità bloccando o liberando intervalli di date."
+}
+
 }

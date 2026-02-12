@@ -139,5 +139,10 @@
     "aria": "Contacter via WhatsApp",
     "label": "WhatsApp",
     "message": "Bonjour ! Je souhaite réserver. Avez-vous des disponibilités ? Merci."
-  }
+  },
+  "admin": {
+  "title": "Panneau d'administration",
+  "subtitle": "Gérez les disponibilités en bloquant ou libérant des plages de dates."
+}
+
 }
