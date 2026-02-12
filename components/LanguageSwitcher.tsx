@@ -6,12 +6,12 @@ import { useState, useRef, useEffect } from "react";
 
 const locales = ["es", "en", "it", "fr", "pt"] as const;
 
-const flags: Record<string, string> = {
-  es: "🇪🇸",
-  en: "🇬🇧",
-  it: "🇮🇹",
-  fr: "🇫🇷",
-  pt: "🇵🇹",
+const flagSrc: Record<string, string> = {
+  es: "https://flagcdn.com/es.svg",
+  en: "https://flagcdn.com/gb.svg",
+  it: "https://flagcdn.com/it.svg",
+  fr: "https://flagcdn.com/fr.svg",
+  pt: "https://flagcdn.com/pt.svg",
 };
 
 export default function LanguageSwitcher() {
@@ -29,7 +29,6 @@ export default function LanguageSwitcher() {
     setOpen(false);
   };
 
-  // cerrar si click fuera
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
@@ -47,11 +46,12 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         className="flex items-center justify-center gap-2 h-10 px-4 rounded-2xl border border-black/10 bg-white/70 backdrop-blur shadow-sm hover:shadow-md transition"
       >
-        <span className="text-lg leading-none">
-          {flags[locale]}
-        </span>
+        <img
+          src={flagSrc[locale]}
+          alt={locale}
+          className="w-5 h-5 rounded-full object-cover"
+        />
 
-        {/* Chevron */}
         <svg
           className="w-4 h-4 opacity-70"
           viewBox="0 0 20 20"
@@ -67,7 +67,7 @@ export default function LanguageSwitcher() {
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute right-0 mt-2 w-40 rounded-2xl border border-black/5 bg-white shadow-lg overflow-hidden">
+        <div className="absolute right-0 mt-2 w-44 rounded-2xl border border-black/5 bg-white shadow-lg overflow-hidden">
           {locales.map((loc) => (
             <button
               key={loc}
@@ -76,7 +76,11 @@ export default function LanguageSwitcher() {
                 loc === locale ? "font-semibold bg-black/5" : ""
               }`}
             >
-              <span className="text-lg">{flags[loc]}</span>
+              <img
+                src={flagSrc[loc]}
+                alt={loc}
+                className="w-5 h-5 rounded-full object-cover"
+              />
               <span className="uppercase">{loc}</span>
             </button>
           ))}
