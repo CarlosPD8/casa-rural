@@ -39,9 +39,9 @@
   },
   "house": {
     "title": "La casa",
-   "intro": "Vivienda Rural Huerta del Medio es una casa rural en Granada con 4 dormitorios, 2 baños completos y capacidad para hasta 10 huéspedes. Dispone de salón amplio con aire acondicionado y estufa de pellet, cocina totalmente equipada y zona exterior privada con piscina, barbacoa y aparcamiento.",
+   "intro": "Casa Rural Huerta del Medio es una casa rural en Granada con 4 dormitorios, 2 baños completos y capacidad para hasta 10 huéspedes. Dispone de salón amplio con aire acondicionado y estufa de pellet, cocina totalmente equipada y zona exterior privada con piscina, barbacoa y aparcamiento.",
     "sectionTitle": "Distribución de la casa",
-    "sectionBody": "La vivienda se distribuye en dos plantas. En la primera encontrarás salón, cocina equipada y baño completo. En la segunda hay 4 dormitorios: dos con cama de matrimonio y terraza, y dos con camas individuales. También dispone de un segundo baño completo.",
+    "sectionBody": "La casa se distribuye en dos plantas. En la primera encontrarás salón, cocina equipada y baño completo. En la segunda hay 4 dormitorios: dos con cama de matrimonio y terraza, y dos con camas individuales. También dispone de un segundo baño completo.",
     "servicesTitle": "Servicios y comodidades",
     "chips": [
       "Cocina equipada",
@@ -119,7 +119,7 @@
   },
   "footer": {
     "aria": "Pie de página",
-    "brandTitle": "Vivienda Rural Huerta del Medio",
+    "brandTitle": "Casa Rural Huerta del Medio",
     "brandSubtitle": "Granada · Naturaleza y descanso",
     "brandBody": "Escápate a un entorno tranquilo y disfruta de una estancia cómoda cerca de Granada.",
     "ctaContact": "Contactar",
@@ -133,7 +133,7 @@
     "infoLocationValue": "Granada (España)",
     "infoBookingTitle": "Reservas",
     "infoBookingValue": "WhatsApp o formulario",
-    "copyright": "© {year} Vivienda Rural Huerta del Medio. Todos los derechos reservados.",
+    "copyright": "© {year} Casa Rural Huerta del Medio. Todos los derechos reservados.",
     "privacy": "Privacidad",
     "cookies": "Cookies",
     "legal": "Aviso legal"
@@ -151,7 +151,7 @@
 
 "homeSeo": {
   "title": "Casa rural en Granada para desconectar y disfrutar",
-  "intro": "Vivienda Rural Huerta del Medio es una vivienda rural en Granada pensada para quienes buscan tranquilidad, naturaleza y una estancia cómoda. Aquí puedes consultar disponibilidad online y reservar directamente por WhatsApp o formulario.",
+  "intro": "Casa Rural Huerta del Medio es una casa rural en Granada pensada para quienes buscan tranquilidad, naturaleza y una estancia cómoda. Aquí puedes consultar disponibilidad online y reservar directamente por WhatsApp o formulario.",
   "section1Title": "Alojamiento rural ideal para familias y grupos",
   "section1Body": "Si buscas una casa rural en Granada para una escapada de fin de semana, vacaciones en familia o unos días con amigos, este alojamiento ofrece espacios amplios y un entorno perfecto para descansar. Nuestro objetivo es que te sientas como en casa desde el primer día.",
   "section2Title": "Comodidades y exterior para aprovechar cada momento",
@@ -177,7 +177,7 @@
     },
     {
       "q": "¿La casa se alquila completa?",
-      "a": "Sí, la Vivienda Rural Huerta del Medio se reserva como alojamiento completo para que puedas disfrutar de privacidad y comodidad durante la estancia."
+      "a": "Sí, la Casa Rural Huerta del Medio se reserva como alojamiento completo para que puedas disfrutar de privacidad y comodidad durante la estancia."
     },
     {
       "q": "¿Es adecuada para familias y grupos?",
@@ -188,7 +188,7 @@
       "a": "Puedes solicitar la reserva por WhatsApp o mediante el formulario de contacto. Te responderemos con la confirmación y los detalles necesarios."
     },
     {
-      "q": "¿Dónde está ubicada la vivienda rural?",
+      "q": "¿Dónde está ubicada la casa rural?",
       "a": "La ubicación se muestra en el mapa de la sección Ubicación. Es un punto cómodo para visitar Granada y moverte por el entorno natural de la zona."
     },
     {
