@@ -3,8 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { locales } from "@/i18n/request";
-//import { Analytics } from "@vercel/analytics/next";
-import VercelAnalyticsScript from "@/components/VercelAnalyticsScript";
+import { Analytics } from "@vercel/analytics/next";
 
 
 function getBaseUrl() {
@@ -37,9 +36,8 @@ export default async function RootLayout({
         {children}
 
         {/* ✅ Vercel Analytics (pageviews / visitors) */}
+        <Analytics />
         
-        <VercelAnalyticsScript />
-
       </body>
     </html>
   );
