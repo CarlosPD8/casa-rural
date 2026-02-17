@@ -12,6 +12,7 @@ import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
 //import SeoSchema from "@/components/SeoSchema";
 import SeoSchemaHome from "@/components/SeoSchemaHome";
+import { EXTERIOR_SLIDES } from "@/lib/gallery";
 
 
 import { useLocale, useTranslations } from "next-intl";
@@ -144,7 +145,12 @@ export default function Home({
                   `rgb(var(--surface) / 0.35))`,
               }}
             />
-            <Carousel />
+            <Carousel
+              images={EXTERIOR_SLIDES}
+              priority
+              ariaLabel="Galería exterior de la casa rural"
+            />
+
 
             <div className="mt-4 flex flex-wrap gap-2">
               {tags.map((tag) => (

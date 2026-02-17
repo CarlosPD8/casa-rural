@@ -8,9 +8,13 @@ type Slide = { src: string; alt: string };
 export default function Carousel({
   images,
   intervalMs = 5000,
+  priority = false,
+  ariaLabel = "Galería de la casa rural",
 }: {
   images?: Slide[];
   intervalMs?: number;
+  priority?: boolean;
+  ariaLabel?: string;
 }) {
   const slides = useMemo<Slide[]>(
     () =>
@@ -64,7 +68,7 @@ export default function Carousel({
 
   return (
     <section
-      aria-label="Galería de la casa rural"
+      aria-label={ariaLabel}
       className="relative w-full"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -86,7 +90,7 @@ export default function Carousel({
             src={slides[index].src}
             alt={slides[index].alt}
             fill
-            priority
+            priority={priority}
             sizes="(max-width: 768px) 100vw, 60vw"
             className="object-cover"
           />
