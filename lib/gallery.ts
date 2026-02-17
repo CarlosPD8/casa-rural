@@ -4,7 +4,7 @@ export type Slide = { src: string; alt: string };
 export const EXTERIOR_SLIDES: Slide[] = [
   {
     src: "/photos/exterior-1.jpg",
-    alt: "Casa rural en Granada con piscina – exterior de Vivienda Rural Huerta del Medio",
+    alt: "Casa rural en Granada con piscina – exterior de casa Rural Huerta del Medio",
   },
   {
     src: "/photos/exterior-2.jpg",
@@ -12,7 +12,7 @@ export const EXTERIOR_SLIDES: Slide[] = [
   },
   {
     src: "/photos/exterior-3.jpg",
-    alt: "Terraza y vistas – vivienda rural en Granada Huerta del Medio",
+    alt: "Terraza y vistas – casa rural en Granada Huerta del Medio",
   },
   {
     src: "/photos/exterior-4.jpg",
@@ -28,7 +28,7 @@ export const INTERIOR_SLIDES: Slide[] = [
   },
   {
     src: "/photos/interior-2.jpg",
-    alt: "Cocina totalmente equipada – vivienda rural en Granada Huerta del Medio",
+    alt: "Cocina totalmente equipada – casa rural en Granada Huerta del Medio",
   },
   {
     src: "/photos/interior-3.jpg",
@@ -36,6 +36,6 @@ export const INTERIOR_SLIDES: Slide[] = [
   },
   {
     src: "/photos/interior-4.jpg",
-    alt: "Baño completo – vivienda rural en Granada Huerta del Medio",
+    alt: "Baño completo – casa rural en Granada Huerta del Medio",
   }
 ];
