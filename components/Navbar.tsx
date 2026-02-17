@@ -60,7 +60,7 @@ export default function Navbar() {
             />
             <span className="leading-tight">
               <span className="block font-bold">
-                Vivienda Rural Huerta del Medio
+                Casa Rural Huerta del Medio
               </span>
               <span className="block text-xs opacity-70">Granada</span>
             </span>
