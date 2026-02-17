@@ -4,6 +4,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import WhatsappButton from "@/components/WhatsappButton";
 import { locales } from "@/i18n/request";
+import { Analytics } from "@vercel/analytics/next";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -26,6 +27,9 @@ export default async function LocaleLayout({
       <Navbar />
       {children}
       <WhatsappButton />
+
+      {/* ✅ Vercel Analytics */}
+      <Analytics />
     </NextIntlClientProvider>
   );
 }
