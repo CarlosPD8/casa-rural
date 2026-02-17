@@ -8,7 +8,7 @@
     "contact": "Contact",
     "book": "Book",
     "tipTitle": "Tip",
-    "tipBody": "Check availability and contact us via WhatsApp or the form."
+    "tipBody": "Check availability and message us via WhatsApp or the form."
   },
   "hero": {
     "badge": "Rural house in Granada",
@@ -24,7 +24,7 @@
     ],
     "bullets": [
       "Comfortable and bright accommodation",
-      "Perfect place to relax",
+      "Perfect environment to relax",
       "Near Granada and hiking routes",
       "Friendly and fast communication"
     ]
@@ -39,9 +39,9 @@
   },
   "house": {
     "title": "The house",
-    "intro": "Vivienda Rural Huerta del Medio is a rural house in Granada with 4 bedrooms, 2 full bathrooms and capacity for up to 10 guests. It has a spacious living room with air conditioning and pellet stove, fully equipped kitchen and private outdoor area with pool, barbecue and parking.",
+    "intro": "Vivienda Rural Huerta del Medio is a rural house in Granada with 4 bedrooms, 2 full bathrooms and capacity for up to 10 guests. It features a spacious living room with air conditioning and a pellet stove, a fully equipped kitchen, and a private outdoor area with pool, barbecue and parking.",
     "sectionTitle": "House layout",
-    "sectionBody": "The house has two floors. On the first floor you will find the living room, equipped kitchen and a full bathroom. On the second floor there are 4 bedrooms: two with double bed and terrace, and two with single beds. There is also a second full bathroom.",
+    "sectionBody": "The house is arranged over two floors. On the first floor you’ll find the living room, equipped kitchen and a full bathroom. On the second floor there are 4 bedrooms: two with a double bed and terrace, and two with single beds. There is also a second full bathroom.",
     "servicesTitle": "Services and amenities",
     "chips": [
       "Equipped kitchen",
@@ -55,9 +55,9 @@
     "amenities": [
       "Bed linen and towels",
       "Full kitchenware",
-      "Outdoor terrace",
-      "Local information and tips",
-      "Flexible check-in (subject to availability)"
+      "Outdoor area / terrace",
+      "Local information and recommendations",
+      "Comfortable and flexible check-in (subject to availability)"
     ]
   },
   "reviews": {
@@ -66,15 +66,15 @@
     "items": [
       {
         "name": "Maria",
-        "text": "Very peaceful and cozy stay. Perfect to disconnect."
+        "text": "A very peaceful and cozy stay. Perfect to disconnect."
       },
       {
         "name": "Javier",
-        "text": "The house was spotless and communication was very fast."
+        "text": "The house was spotless and communication was incredibly fast."
       },
       {
         "name": "Laura",
-        "text": "Great location to visit Granada and relax afterwards."
+        "text": "Great location to visit Granada and come back to rest in calm."
       }
     ]
   },
@@ -85,42 +85,42 @@
   "availability": {
     "publicTitle": "Availability calendar",
     "publicSubtitle": "Marked dates are booked. The rest are available.",
-    "publicNote": "Do the dates fit? Contact us via WhatsApp or the form.",
+    "publicNote": "Do the dates work for you? Message us via WhatsApp or send the form to confirm.",
     "legendAvailable": "Available",
     "legendBusy": "Booked",
     "refresh": "Refresh",
     "loading": "Loading…",
     "adminTitle": "Availability management",
-    "adminSubtitle": "Block date ranges or remove blocks.",
+    "adminSubtitle": "Block date ranges or remove existing blocks.",
     "adminFooterTip": "Select a date range to block it.",
-    "adminNotePlaceholder": "Note (optional)",
+    "adminNotePlaceholder": "Note (optional): reason or details",
     "adminBlockRange": "Block range",
     "adminBlockedTitle": "Blocked ranges",
-    "adminEmpty": "No blocked ranges.",
+    "adminEmpty": "There are no blocked ranges.",
     "adminUnblock": "Unblock"
   },
   "location": {
     "title": "Location",
-    "subtitle": "A rural house perfect to discover Granada and nature.",
-    "mapTitle": "House map"
+    "subtitle": "A rural house perfect to discover Granada and its natural surroundings.",
+    "mapTitle": "Rural house map"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Tell us your dates and we will reply soon.",
+    "subtitle": "Tell us your dates and we’ll reply as soon as possible.",
     "name": "Name",
     "email": "Email",
     "phoneOptional": "Phone (optional)",
-    "messagePlaceholder": "Message (dates, guests, questions…)",
+    "messagePlaceholder": "Message (dates, number of guests, questions…)",
     "send": "Send message",
     "sending": "Sending…",
-    "success": "✅ Message sent. Thank you!",
-    "errorDefault": "Could not send. Try again later.",
-    "privacyNote": "By sending this form you accept data processing to answer your request."
+    "success": "✅ Message sent. Thank you! We’ll reply soon.",
+    "errorDefault": "Could not send. Please try again in a few minutes.",
+    "privacyNote": "By sending this form you agree to the processing of your data so we can reply to your request."
   },
   "footer": {
     "aria": "Footer",
     "brandTitle": "Vivienda Rural Huerta del Medio",
-    "brandSubtitle": "Granada · Nature & relaxation",
+    "brandSubtitle": "Granada · Nature and relaxation",
     "brandBody": "Escape to a peaceful environment and enjoy a comfortable stay near Granada.",
     "ctaContact": "Contact",
     "ctaAvailability": "Availability",
@@ -128,7 +128,7 @@
     "sectionsAvailability": "Availability",
     "sectionsReviews": "Reviews",
     "sectionsContact": "Contact",
-    "infoTitle": "Info",
+    "infoTitle": "Information",
     "infoLocationTitle": "Area",
     "infoLocationValue": "Granada (Spain)",
     "infoBookingTitle": "Bookings",
@@ -141,10 +141,58 @@
   "whatsapp": {
     "aria": "Contact via WhatsApp",
     "label": "WhatsApp",
-    "message": "Hello, I'm interested in booking. Do you have availability? Thanks."
+    "message": "Hi, I’m interested in booking. Do you have availability? Thanks."
   },
   "admin": {
     "title": "Admin panel",
     "subtitle": "Manage availability by blocking or freeing dates."
+  },
+  "homeSeo": {
+    "title": "Rural house in Granada to relax and enjoy",
+    "intro": "Vivienda Rural Huerta del Medio is a rural accommodation in Granada for those looking for peace, nature and a comfortable stay. Check availability online and book directly via WhatsApp or the form.",
+    "section1Title": "Ideal rural accommodation for families and groups",
+    "section1Body": "If you’re looking for a rural house in Granada for a weekend getaway, family holidays or a few days with friends, this place offers spacious areas and a perfect setting to rest.",
+    "section2Title": "Comfort and outdoor space to enjoy every moment",
+    "section2Body": "The house is ready for complete stays: equipped kitchen, relaxing areas, comfortable rooms and a private outdoor space with pool and barbecue.",
+    "section3Title": "A great base to discover Granada and nearby areas",
+    "section3Body": "A great base to visit Granada and return to calm at the end of the day, with nature and routes nearby.",
+    "ctaAvailability": "Check availability",
+    "ctaContact": "Request information",
+    "asideTitle": "Why book here",
+    "bullets": [
+      "Direct booking via WhatsApp or form",
+      "Up-to-date availability calendar",
+      "Quiet environment to unwind",
+      "Ideal for getaways and holidays"
+    ],
+    "noteTitle": "Tip",
+    "noteBody": "If you already have approximate dates, check the calendar and message us—we usually reply quickly.",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How can I check availability?",
+        "a": "In the Availability section you’ll see the updated calendar. If your dates are free, contact us via WhatsApp or the form to confirm."
+      },
+      {
+        "q": "Is the house rented as a whole?",
+        "a": "Yes, Vivienda Rural Huerta del Medio is booked as an entire place so you can enjoy privacy and comfort."
+      },
+      {
+        "q": "Is it suitable for families and groups?",
+        "a": "Yes. It’s ideal for families and groups looking for a rural house in Granada with space and a quiet setting."
+      },
+      {
+        "q": "How do I book?",
+        "a": "You can request a booking via WhatsApp or the contact form. We’ll reply with confirmation and the necessary details."
+      },
+      {
+        "q": "Where is the rural house located?",
+        "a": "The location is shown on the map in the Location section. It’s a convenient base to visit Granada and explore the natural surroundings."
+      },
+      {
+        "q": "What information should I send when contacting you?",
+        "a": "Share approximate dates, number of guests and any questions. That helps us confirm availability and conditions."
+      }
+    ]
   }
 }
