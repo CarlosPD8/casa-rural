@@ -1,20 +1,58 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import { locales } from "@/i18n/request";
 
-import AvailabilityCalendar from "@/components/AvailabilityCalendar";
-import { getTranslations } from "next-intl/server";
+function getBaseUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
 
-export default async function AvailabilityPage() {
-  const t = await getTranslations("availabilityHome");
+  const vercel = process.env.VERCEL_URL;
+  if (vercel) return `https://${vercel}`.replace(/\/$/, "");
 
-  return (
-    <main className="container-page py-16 space-y-10">
-      <header className="space-y-3">
-        <h1 className="text-4xl font-bold">{t("title")}</h1>
-        <p className="opacity-80 max-w-2xl">{t("description")}</p>
-      </header>
+  return "http://localhost:3000";
+}
 
-      <AvailabilityCalendar mode="public" />
-    </main>
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const baseUrl = getBaseUrl();
+  const canonical = `${baseUrl}/${locale}/availability`;
+
+  const title =
+    locale === "es"
+      ? "Disponibilidad | Vivienda Rural Huerta del Medio en Granada"
+      : "Availability | Vivienda Rural Huerta del Medio in Granada";
+
+  const description =
+    locale === "es"
+      ? "Consulta el calendario de disponibilidad de nuestra casa rural en Granada y reserva tus fechas directamente por WhatsApp o formulario."
+      : "Check availability of our rural house in Granada and book your stay via WhatsApp or contact form.";
+
+  const languages = Object.fromEntries(
+    locales.map((l) => [l, `${baseUrl}/${l}/availability`])
   );
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages: {
+        ...languages,
+        "x-default": `${baseUrl}/es/availability`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: "Vivienda Rural Huerta del Medio",
+      type: "website",
+    },
+  };
 }

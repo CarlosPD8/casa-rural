@@ -12,7 +12,7 @@
   },
   "hero": {
     "badge": "Casa rural en Granada",
-    "title": "Vivienda Rural Huerta del Medio",
+    "title": "Casa rural en Granada Huerta del Medio",
     "subtitle": "Casa rural en Granada ideal para familias y grupos, con piscina, jardín y entorno natural a pocos minutos del centro de Granada.",
     "ctaAvailability": "Ver disponibilidad",
     "ctaReviews": "Leer opiniones",
@@ -39,9 +39,9 @@
   },
   "house": {
     "title": "La casa",
-    "intro": "Un espacio pensado para descansar y disfrutar del entorno. Ideal para parejas, familias o pequeñas escapadas con amigos. Ubicación perfecta e inmejorable, encontrarás a 200m el centro comercial Neptuno y a 1km la zona del centro y zonas turísticas.",
-    "sectionTitle": "Confort y estilo rural",
-    "sectionBody": "Ambientes cuidados, luz natural y una distribución práctica para sentirse como en casa desde el primer día. La casa dispone de un espacioso salón con estufa de pellet y aire acondicionado. La cocina es muy amplia y se encuentra equipada con todos los electrodomésticos y menaje necesario, así como una gran mesa y TV. Todo ello se encuentra en una primera planta junto con un cuarto de baño completo. En la segunda planta se encuentran 4 dormitorios, de los cuales 2 de ellos tienen cama de matrimonio y amplia terraza, el resto cuentan con dos camas individuales y una litera. En la misma planta hay un cuarto de baño completo. En el exterior nos encontramos con una parcela de 2000m en la que encontrarás una zona ajardinada, una piscina, barbacoa, grifo de cerveza, neveras y una zona de estacionamiento privado.",
+   "intro": "Vivienda Rural Huerta del Medio es una casa rural en Granada con 4 dormitorios, 2 baños completos y capacidad para hasta 10 huéspedes. Dispone de salón amplio con aire acondicionado y estufa de pellet, cocina totalmente equipada y zona exterior privada con piscina, barbacoa y aparcamiento.",
+    "sectionTitle": "Distribución de la casa",
+    "sectionBody": "La vivienda se distribuye en dos plantas. En la primera encontrarás salón, cocina equipada y baño completo. En la segunda hay 4 dormitorios: dos con cama de matrimonio y terraza, y dos con camas individuales. También dispone de un segundo baño completo.",
     "servicesTitle": "Servicios y comodidades",
     "chips": [
       "Cocina equipada",
@@ -147,6 +147,56 @@
   "admin": {
   "title": "Panel de administración",
   "subtitle": "Gestiona la disponibilidad bloqueando o liberando fechas."
+},
+
+"homeSeo": {
+  "title": "Casa rural en Granada para desconectar y disfrutar",
+  "intro": "Vivienda Rural Huerta del Medio es una vivienda rural en Granada pensada para quienes buscan tranquilidad, naturaleza y una estancia cómoda. Aquí puedes consultar disponibilidad online y reservar directamente por WhatsApp o formulario.",
+  "section1Title": "Alojamiento rural ideal para familias y grupos",
+  "section1Body": "Si buscas una casa rural en Granada para una escapada de fin de semana, vacaciones en familia o unos días con amigos, este alojamiento ofrece espacios amplios y un entorno perfecto para descansar. Nuestro objetivo es que te sientas como en casa desde el primer día.",
+  "section2Title": "Comodidades y exterior para aprovechar cada momento",
+  "section2Body": "La casa está preparada para estancias completas: cocina equipada, zonas de descanso, habitaciones confortables y exterior para disfrutar del buen tiempo. Consulta los servicios disponibles y elige las fechas que mejor encajen.",
+  "section3Title": "Ubicación perfecta para descubrir Granada y alrededores",
+  "section3Body": "Una base excelente para visitar Granada y, al mismo tiempo, volver a la calma al final del día. Encontrarás rutas, naturaleza y planes para todas las edades, con buena conexión hacia los principales puntos de interés de la provincia.",
+  "ctaAvailability": "Consultar disponibilidad",
+  "ctaContact": "Pedir información",
+  "asideTitle": "Por qué reservar aquí",
+  "bullets": [
+    "Reserva directa por WhatsApp o formulario",
+    "Calendario de disponibilidad actualizado",
+    "Entorno tranquilo para descansar",
+    "Ideal para escapadas y vacaciones"
+  ],
+  "noteTitle": "Consejo",
+  "noteBody": "Si ya tienes fechas aproximadas, revisa el calendario y escríbenos: solemos responder rápido.",
+  "faqTitle": "Preguntas frecuentes",
+  "faq": [
+    {
+      "q": "¿Cómo puedo comprobar la disponibilidad?",
+      "a": "En la sección de Disponibilidad verás el calendario actualizado. Si tus fechas están libres, contacta por WhatsApp o formulario para confirmar la reserva."
+    },
+    {
+      "q": "¿La casa se alquila completa?",
+      "a": "Sí, la Vivienda Rural Huerta del Medio se reserva como alojamiento completo para que puedas disfrutar de privacidad y comodidad durante la estancia."
+    },
+    {
+      "q": "¿Es adecuada para familias y grupos?",
+      "a": "Sí. Es una opción ideal para familias y grupos que buscan una casa rural en Granada con espacio y un entorno tranquilo."
+    },
+    {
+      "q": "¿Cómo se realiza la reserva?",
+      "a": "Puedes solicitar la reserva por WhatsApp o mediante el formulario de contacto. Te responderemos con la confirmación y los detalles necesarios."
+    },
+    {
+      "q": "¿Dónde está ubicada la vivienda rural?",
+      "a": "La ubicación se muestra en el mapa de la sección Ubicación. Es un punto cómodo para visitar Granada y moverte por el entorno natural de la zona."
+    },
+    {
+      "q": "¿Qué información debo enviar al contactar?",
+      "a": "Indica fechas aproximadas, número de personas y cualquier duda (horario, necesidades, etc.). Con eso te podremos confirmar disponibilidad y condiciones."
+    }
+  ]
 }
+
 
 }

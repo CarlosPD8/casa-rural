@@ -1,3 +1,7 @@
+import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import { locales } from "@/i18n/request";
+import HomeSeo from "@/components/HomeSeo";
 import Carousel from "@/components/Carousel";
 import Highlights from "@/components/Highlights";
 import Amenities from "@/components/Amenities";
@@ -6,8 +10,72 @@ import ContactForm from "@/components/ContactForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
+import SeoSchema from "@/components/SeoSchema";
+
 
 import { useLocale, useTranslations } from "next-intl";
+
+function getBaseUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
+
+  const vercel = process.env.VERCEL_URL;
+  if (vercel) return `https://${vercel}`.replace(/\/$/, "");
+
+  return "http://localhost:3000";
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const baseUrl = getBaseUrl();
+
+  // Título/description pensados para reserva (puedes afinar luego los textos)
+  const isEs = locale === "es";
+  const title = isEs
+    ? "Vivienda Rural Huerta del Medio | Casa rural en Granada"
+    : "Vivienda Rural Huerta del Medio | Rural house in Granada";
+
+  const description = isEs
+    ? "Casa rural en Granada ideal para escapadas, familias y grupos. Consulta disponibilidad, ubicación y reserva por WhatsApp o formulario."
+    : "Rural accommodation in Granada for families and groups. Check availability, location and book via WhatsApp or contact form.";
+
+  const canonical = `${baseUrl}/${locale}`;
+
+  const languages = Object.fromEntries(
+    locales.map((l) => [l, `${baseUrl}/${l}`])
+  ) as Record<string, string>;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages: {
+        ...languages,
+        "x-default": `${baseUrl}/es`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: "Vivienda Rural Huerta del Medio",
+      locale: locale === "es" ? "es_ES" : undefined,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export default function Home() {
   const locale = useLocale();
@@ -129,6 +197,8 @@ export default function Home() {
         />
       </section>
 
+      <HomeSeo />
+
       {/* CONTENT */}
       <section id="la-casa" className="container-page scroll-mt-24">
         <Amenities />
@@ -157,6 +227,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <SeoSchema />
     </main>
   );
 }
