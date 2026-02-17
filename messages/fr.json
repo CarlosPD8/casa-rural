@@ -4,29 +4,29 @@
     "house": "La maison",
     "availability": "Disponibilités",
     "reviews": "Avis",
-    "location": "Emplacement",
+    "location": "Localisation",
     "contact": "Contact",
     "book": "Réserver",
     "tipTitle": "Conseil",
-    "tipBody": "Vérifiez les disponibilités et contactez-nous via WhatsApp ou le formulaire."
+    "tipBody": "Consultez les disponibilités et écrivez-nous via WhatsApp ou le formulaire."
   },
   "hero": {
-    "badge": "Maison rurale à Grenade",
-    "title": "Maison Rurale Huerta del Medio",
-    "subtitle": "Nature, calme et escapades pleines de charme à deux pas de Grenade.",
-    "ctaAvailability": "Voir les disponibilités",
-    "ctaReviews": "Lire les avis",
+    "badge": "Gîte à Grenade",
+    "title": "Gîte à Grenade Huerta del Medio",
+    "subtitle": "Gîte à Grenade idéal pour familles et groupes avec piscine, jardin et environnement naturel près du centre de Grenade.",
+    "ctaAvailability": "Voir disponibilités",
+    "ctaReviews": "Lire avis",
     "tags": [
-      "Cadre naturel",
-      "Idéal en famille",
-      "Terrasse & vues",
+      "Environnement naturel",
+      "Idéal pour familles",
+      "Terrasse & vue",
       "Tranquillité"
     ],
     "bullets": [
-      "Hébergement confortable et lumineux",
-      "Un cadre parfait pour se déconnecter",
-      "Proche de Grenade et de sentiers",
-      "Réponse rapide et conviviale"
+      "Hébergement lumineux et confortable",
+      "Cadre parfait pour se détendre",
+      "Près de Grenade et sentiers de randonnée",
+      "Accueil rapide et attentionné"
     ]
   },
   "highlights": {
@@ -39,87 +39,90 @@
   },
   "house": {
     "title": "La maison",
-    "intro": "Un lieu pensé pour se reposer et profiter des environs. Idéal pour les couples, les familles ou de petites escapades entre amis.",
-    "sectionTitle": "Confort avec une touche rurale",
-    "sectionBody": "Espaces soignés, lumière naturelle et agencement pratique pour se sentir chez soi dès le premier jour.",
+    "intro": "Vivienda Rural Huerta del Medio est un gîte à Grenade avec 4 chambres, 2 salles de bain complètes et une capacité jusqu’à 10 personnes. Grand salon avec climatisation et poêle à pellets, cuisine entièrement équipée et espace extérieur privé avec piscine, barbecue et parking.",
+    "sectionTitle": "Disposition de la maison",
+    "sectionBody": "La maison se compose de deux étages. Au premier : salon, cuisine équipée et salle de bain. Au second : 4 chambres, deux avec lit double et terrasse et deux avec lits simples, plus une seconde salle de bain.",
     "servicesTitle": "Services et équipements",
     "chips": [
       "Cuisine équipée",
       "Wi-Fi",
-      "Climatisation / chauffage",
-      "Parking à proximité"
+      "Climatisation / Poêle à pellets",
+      "Parking",
+      "Piscine",
+      "Barbecue",
+      "Tireuse à bière"
     ],
     "amenities": [
-      "Linge de lit et serviettes",
-      "Vaisselle complète",
-      "Espace extérieur / terrasse",
-      "Conseils et infos locales",
+      "Draps et serviettes inclus",
+      "Cuisine complète",
+      "Terrasse extérieure",
+      "Conseils locaux",
       "Arrivée flexible (selon disponibilité)"
     ]
   },
   "reviews": {
     "title": "Avis",
-    "subtitle": "Ce que disent nos voyageurs de leur séjour.",
+    "subtitle": "Ce que disent nos voyageurs.",
     "items": [
       {
         "name": "Maria",
-        "text": "Un séjour très calme et chaleureux. Parfait pour se ressourcer."
+        "text": "Séjour très calme et agréable. Parfait pour se reposer."
       },
       {
         "name": "Javier",
-        "text": "Maison impeccable et communication ultra rapide."
+        "text": "Maison impeccable et communication très rapide."
       },
       {
         "name": "Laura",
-        "text": "Emplacement idéal pour visiter Grenade et revenir se reposer au calme."
+        "text": "Emplacement idéal pour visiter Grenade."
       }
     ]
   },
   "availabilityHome": {
     "title": "Disponibilités",
-    "description": "Consultez les dates disponibles et contactez-nous pour confirmer votre réservation."
+    "description": "Consultez les dates disponibles et contactez-nous pour réserver."
   },
   "availability": {
-    "publicTitle": "Calendrier de disponibilité",
-    "publicSubtitle": "Les dates surlignées sont réservées. Le reste est disponible.",
-    "publicNote": "Les dates vous conviennent ? Écrivez-nous sur WhatsApp ou via le formulaire pour confirmer.",
+    "publicTitle": "Calendrier des disponibilités",
+    "publicSubtitle": "Les dates marquées sont occupées. Les autres sont disponibles.",
+    "publicNote": "Les dates vous conviennent ? Écrivez-nous via WhatsApp ou formulaire.",
     "legendAvailable": "Disponible",
-    "legendBusy": "Réservé",
+    "legendBusy": "Occupé",
     "refresh": "Actualiser",
     "loading": "Chargement…",
     "adminTitle": "Gestion des disponibilités",
-    "adminSubtitle": "Bloquez des plages de dates ou supprimez des blocages existants.",
-    "adminFooterTip": "Sélectionnez une plage de dates à bloquer.",
-    "adminNotePlaceholder": "Note (optionnelle) : raison ou détails",
-    "adminBlockRange": "Bloquer la plage",
-    "adminBlockedTitle": "Plages bloquées",
-    "adminEmpty": "Aucune plage bloquée.",
+    "adminSubtitle": "Bloquez des dates ou supprimez des blocages.",
+    "adminFooterTip": "Sélectionnez une période pour la bloquer.",
+    "adminNotePlaceholder": "Note (optionnelle)",
+    "adminBlockRange": "Bloquer période",
+    "adminBlockedTitle": "Périodes bloquées",
+    "adminEmpty": "Aucune période bloquée.",
     "adminUnblock": "Débloquer"
   },
   "location": {
-    "title": "Emplacement",
-    "subtitle": "Une base parfaite pour découvrir Grenade et la nature environnante.",
-    "mapTitle": "Carte de la maison rurale"
+    "title": "Localisation",
+    "subtitle": "Un gîte idéal pour découvrir Grenade et la nature environnante.",
+    "mapTitle": "Carte de la maison"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Indiquez vos dates et nous vous répondrons au plus vite.",
+    "subtitle": "Indiquez vos dates et nous répondrons rapidement.",
     "name": "Nom",
-    "email": "E-mail",
+    "email": "Email",
     "phoneOptional": "Téléphone (optionnel)",
-    "messagePlaceholder": "Message (dates, nombre de personnes, questions…)",
-    "send": "Envoyer",
+    "messagePlaceholder": "Message (dates, personnes, questions…)",
+    "send": "Envoyer message",
     "sending": "Envoi…",
-    "success": "✅ Message envoyé. Merci ! Nous vous répondrons bientôt.",
-    "errorDefault": "Envoi impossible. Réessayez dans quelques minutes.",
-    "privacyNote": "En envoyant ce formulaire, vous acceptez le traitement de vos données afin que nous puissions répondre à votre demande."
+    "success": "✅ Message envoyé. Merci !",
+    "errorDefault": "Erreur d’envoi. Réessayez plus tard.",
+    "privacyNote": "En envoyant ce formulaire vous acceptez le traitement des données."
   },
   "footer": {
     "aria": "Pied de page",
-    "brandTitle": "Maison Rurale Huerta del Medio",
-    "brandSubtitle": "Grenade · Nature et repos",
-    "brandBody": "Évadez-vous dans un cadre paisible et profitez d’un séjour confortable près de Grenade.",
-    "ctaContact": "Contacter",
+    "brandTitle": "Vivienda Rural Huerta del Medio",
+    "brandSubtitle": "Grenade · Nature et détente",
+    "brandBody": "Profitez d’un séjour confortable dans un environnement paisible près de Grenade.",
+    "ctaContact": "Contact",
     "ctaAvailability": "Disponibilités",
     "sectionsTitle": "Sections",
     "sectionsAvailability": "Disponibilités",
@@ -130,7 +133,7 @@
     "infoLocationValue": "Grenade (Espagne)",
     "infoBookingTitle": "Réservations",
     "infoBookingValue": "WhatsApp ou formulaire",
-    "copyright": "© {year} Maison Rurale Huerta del Medio. Tous droits réservés.",
+    "copyright": "© {year} Vivienda Rural Huerta del Medio. Tous droits réservés.",
     "privacy": "Confidentialité",
     "cookies": "Cookies",
     "legal": "Mentions légales"
@@ -138,11 +141,51 @@
   "whatsapp": {
     "aria": "Contacter via WhatsApp",
     "label": "WhatsApp",
-    "message": "Bonjour ! Je souhaite réserver. Avez-vous des disponibilités ? Merci."
+    "message": "Bonjour, je souhaite réserver. Avez-vous des disponibilités ? Merci."
   },
   "admin": {
-  "title": "Panneau d'administration",
-  "subtitle": "Gérez les disponibilités en bloquant ou libérant des plages de dates."
-}
+    "title": "Panneau administration",
+    "subtitle": "Gérez les disponibilités en bloquant ou libérant des dates."
+  },
 
+  "homeSeo": {
+    "title": "Gîte à Grenade pour se détendre et profiter",
+    "intro": "Vivienda Rural Huerta del Medio est un gîte à Grenade idéal pour ceux qui recherchent calme, nature et confort. Consultez les disponibilités en ligne et réservez directement via WhatsApp ou formulaire.",
+    "section1Title": "Location rurale idéale pour familles et groupes",
+    "section1Body": "Si vous cherchez un gîte à Grenade pour un week-end ou des vacances en famille, cet hébergement offre espace et confort dans un cadre naturel.",
+    "section2Title": "Confort et extérieur pour profiter du séjour",
+    "section2Body": "Maison équipée avec cuisine complète, chambres confortables et espace extérieur privé avec piscine et barbecue.",
+    "section3Title": "Emplacement parfait pour découvrir Grenade",
+    "section3Body": "Base idéale pour visiter Grenade et revenir au calme le soir, avec nature et activités autour.",
+    "ctaAvailability": "Voir disponibilités",
+    "ctaContact": "Demander informations",
+    "asideTitle": "Pourquoi réserver ici",
+    "bullets": [
+      "Réservation directe",
+      "Calendrier à jour",
+      "Environnement calme",
+      "Idéal pour vacances"
+    ],
+    "noteTitle": "Conseil",
+    "noteBody": "Si vous avez des dates, consultez le calendrier et écrivez-nous.",
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      {
+        "q": "Comment vérifier la disponibilité ?",
+        "a": "Consultez le calendrier dans la section Disponibilités."
+      },
+      {
+        "q": "La maison est louée entière ?",
+        "a": "Oui, le gîte est loué entier pour garantir la tranquillité."
+      },
+      {
+        "q": "Est-ce adapté aux familles ?",
+        "a": "Oui, idéal pour familles et groupes à Grenade."
+      },
+      {
+        "q": "Comment réserver ?",
+        "a": "Contactez-nous via WhatsApp ou formulaire."
+      }
+    ]
+  }
 }

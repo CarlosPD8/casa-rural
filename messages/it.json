@@ -8,29 +8,29 @@
     "contact": "Contatto",
     "book": "Prenota",
     "tipTitle": "Consiglio",
-    "tipBody": "Controlla la disponibilità e contattaci su WhatsApp o tramite il modulo."
+    "tipBody": "Controlla la disponibilità e scrivici su WhatsApp o dal modulo."
   },
   "hero": {
     "badge": "Casa rurale a Granada",
-    "title": "Casa Rurale Huerta del Medio",
-    "subtitle": "Natura, tranquillità e una fuga di charme a due passi da Granada.",
+    "title": "Casa rurale a Granada Huerta del Medio",
+    "subtitle": "Casa rurale a Granada ideale per famiglie e gruppi, con piscina, giardino e natura vicino al centro di Granada.",
     "ctaAvailability": "Vedi disponibilità",
-    "ctaReviews": "Leggi le recensioni",
+    "ctaReviews": "Leggi recensioni",
     "tags": [
       "Natura",
       "Ideale per famiglie",
-      "Terrazza e viste",
-      "Relax"
+      "Terrazza e vista",
+      "Tranquillità"
     ],
     "bullets": [
-      "Alloggio comodo e luminoso",
-      "Perfetto per staccare la spina",
-      "Vicino a Granada e a sentieri",
-      "Comunicazione rapida e cordiale"
+      "Alloggio luminoso e confortevole",
+      "Ambiente perfetto per rilassarsi",
+      "Vicino a Granada e percorsi di trekking",
+      "Assistenza rapida e cordiale"
     ]
   },
   "highlights": {
-    "capacity": "Capienza",
+    "capacity": "Capacità",
     "capacityValue": "{count} ospiti",
     "bedrooms": "Camere",
     "bathrooms": "Bagni",
@@ -39,27 +39,30 @@
   },
   "house": {
     "title": "La casa",
-    "intro": "Uno spazio pensato per riposare e godersi l’ambiente. Ideale per coppie, famiglie o piccole fughe con amici.",
-    "sectionTitle": "Comfort con tocco rurale",
-    "sectionBody": "Spazi curati, luce naturale e una disposizione pratica per sentirsi a casa fin dal primo giorno.",
+    "intro": "Vivienda Rural Huerta del Medio è una casa rurale a Granada con 4 camere da letto, 2 bagni completi e capacità fino a 10 ospiti. Dispone di ampio soggiorno con aria condizionata e stufa a pellet, cucina completamente attrezzata e spazio esterno privato con piscina, barbecue e parcheggio.",
+    "sectionTitle": "Distribuzione della casa",
+    "sectionBody": "La casa si sviluppa su due piani. Al primo piano troverai soggiorno, cucina attrezzata e bagno completo. Al secondo piano ci sono 4 camere: due matrimoniali con terrazza e due con letti singoli. È presente anche un secondo bagno completo.",
     "servicesTitle": "Servizi e comfort",
     "chips": [
       "Cucina attrezzata",
       "Wi-Fi",
-      "Aria condizionata / riscaldamento",
-      "Parcheggio nelle vicinanze"
+      "Aria condizionata / Stufa a pellet",
+      "Parcheggio",
+      "Piscina",
+      "Barbecue",
+      "Spina per birra"
     ],
     "amenities": [
-      "Biancheria e asciugamani",
-      "Stoviglie complete",
-      "Spazio esterno / terrazza",
-      "Consigli e info locali",
+      "Lenzuola e asciugamani inclusi",
+      "Cucina completa",
+      "Terrazza esterna",
+      "Consigli locali e informazioni",
       "Check-in flessibile (secondo disponibilità)"
     ]
   },
   "reviews": {
     "title": "Recensioni",
-    "subtitle": "Cosa dicono i nostri ospiti del loro soggiorno.",
+    "subtitle": "Cosa dicono i nostri ospiti.",
     "items": [
       {
         "name": "Maria",
@@ -67,11 +70,11 @@
       },
       {
         "name": "Javier",
-        "text": "Casa pulitissima e comunicazione rapidissima."
+        "text": "Casa impeccabile e comunicazione rapidissima."
       },
       {
         "name": "Laura",
-        "text": "Posizione ideale per visitare Granada e poi riposare in tranquillità."
+        "text": "Posizione ideale per visitare Granada e tornare a riposare."
       }
     ]
   },
@@ -81,16 +84,16 @@
   },
   "availability": {
     "publicTitle": "Calendario disponibilità",
-    "publicSubtitle": "Le date evidenziate sono occupate. Le altre sono disponibili.",
-    "publicNote": "Le date vanno bene? Scrivici su WhatsApp o usa il modulo per confermare.",
+    "publicSubtitle": "Le date segnate sono occupate. Le altre disponibili.",
+    "publicNote": "Le date ti vanno bene? Scrivici su WhatsApp o tramite modulo.",
     "legendAvailable": "Disponibile",
     "legendBusy": "Occupato",
     "refresh": "Aggiorna",
     "loading": "Caricamento…",
     "adminTitle": "Gestione disponibilità",
-    "adminSubtitle": "Blocca intervalli di date o rimuovi blocchi esistenti.",
-    "adminFooterTip": "Seleziona un intervallo di date da bloccare.",
-    "adminNotePlaceholder": "Nota (opzionale): motivo o dettagli",
+    "adminSubtitle": "Blocca intervalli di date o rimuovi blocchi.",
+    "adminFooterTip": "Seleziona un intervallo di date per bloccarlo.",
+    "adminNotePlaceholder": "Nota (opzionale)",
     "adminBlockRange": "Blocca intervallo",
     "adminBlockedTitle": "Intervalli bloccati",
     "adminEmpty": "Nessun intervallo bloccato.",
@@ -98,51 +101,91 @@
   },
   "location": {
     "title": "Posizione",
-    "subtitle": "Una base perfetta per scoprire Granada e i dintorni naturali.",
-    "mapTitle": "Mappa della casa rurale"
+    "subtitle": "Una casa rurale perfetta per scoprire Granada e il suo ambiente naturale.",
+    "mapTitle": "Mappa della casa"
   },
   "contact": {
     "title": "Contatto",
-    "subtitle": "Dicci le tue date e ti risponderemo al più presto.",
+    "subtitle": "Indicaci le date e ti risponderemo il prima possibile.",
     "name": "Nome",
     "email": "Email",
     "phoneOptional": "Telefono (opzionale)",
     "messagePlaceholder": "Messaggio (date, numero persone, domande…)",
     "send": "Invia messaggio",
     "sending": "Invio…",
-    "success": "✅ Messaggio inviato. Grazie! Ti risponderemo presto.",
+    "success": "✅ Messaggio inviato. Grazie!",
     "errorDefault": "Invio non riuscito. Riprova tra qualche minuto.",
-    "privacyNote": "Inviando questo modulo accetti il trattamento dei dati per poter rispondere alla tua richiesta."
+    "privacyNote": "Inviando il modulo accetti il trattamento dei dati per rispondere alla richiesta."
   },
   "footer": {
-    "aria": "Piè di pagina",
-    "brandTitle": "Casa Rurale Huerta del Medio",
+    "aria": "Footer",
+    "brandTitle": "Vivienda Rural Huerta del Medio",
     "brandSubtitle": "Granada · Natura e relax",
-    "brandBody": "Scappa in un luogo tranquillo e goditi un soggiorno confortevole vicino a Granada.",
-    "ctaContact": "Contatta",
+    "brandBody": "Scappa in un ambiente tranquillo e goditi un soggiorno confortevole vicino a Granada.",
+    "ctaContact": "Contatto",
     "ctaAvailability": "Disponibilità",
     "sectionsTitle": "Sezioni",
     "sectionsAvailability": "Disponibilità",
     "sectionsReviews": "Recensioni",
     "sectionsContact": "Contatto",
-    "infoTitle": "Info",
+    "infoTitle": "Informazioni",
     "infoLocationTitle": "Zona",
     "infoLocationValue": "Granada (Spagna)",
     "infoBookingTitle": "Prenotazioni",
     "infoBookingValue": "WhatsApp o modulo",
-    "copyright": "© {year} Casa Rurale Huerta del Medio. Tutti i diritti riservati.",
+    "copyright": "© {year} Vivienda Rural Huerta del Medio. Tutti i diritti riservati.",
     "privacy": "Privacy",
     "cookies": "Cookie",
     "legal": "Note legali"
   },
   "whatsapp": {
-    "aria": "Contattare via WhatsApp",
+    "aria": "Contatta via WhatsApp",
     "label": "WhatsApp",
-    "message": "Ciao! Vorrei prenotare. Avete disponibilità? Grazie."
+    "message": "Ciao, sono interessato a prenotare. Avete disponibilità? Grazie."
   },
   "admin": {
-  "title": "Pannello di amministrazione",
-  "subtitle": "Gestisci la disponibilità bloccando o liberando intervalli di date."
-}
+    "title": "Pannello amministrazione",
+    "subtitle": "Gestisci la disponibilità bloccando o liberando date."
+  },
 
+  "homeSeo": {
+    "title": "Casa rurale a Granada per rilassarsi e godersi la vacanza",
+    "intro": "Vivienda Rural Huerta del Medio è una casa rurale a Granada perfetta per chi cerca tranquillità, natura e comfort. Controlla la disponibilità online e prenota direttamente via WhatsApp o modulo.",
+    "section1Title": "Alloggio rurale ideale per famiglie e gruppi",
+    "section1Body": "Se cerchi una casa rurale a Granada per un weekend, vacanze in famiglia o qualche giorno con amici, questo alloggio offre spazi ampi e un ambiente perfetto per riposare.",
+    "section2Title": "Comfort e spazi esterni per godersi ogni momento",
+    "section2Body": "La casa è preparata per soggiorni completi con cucina attrezzata, camere confortevoli e spazio esterno privato con piscina e barbecue.",
+    "section3Title": "Posizione ideale per scoprire Granada e dintorni",
+    "section3Body": "Una base perfetta per visitare Granada e tornare alla tranquillità a fine giornata, con natura e percorsi nei dintorni.",
+    "ctaAvailability": "Controlla disponibilità",
+    "ctaContact": "Richiedi informazioni",
+    "asideTitle": "Perché prenotare qui",
+    "bullets": [
+      "Prenotazione diretta via WhatsApp o modulo",
+      "Calendario aggiornato",
+      "Ambiente tranquillo",
+      "Ideale per vacanze e weekend"
+    ],
+    "noteTitle": "Consiglio",
+    "noteBody": "Se hai già date approssimative, controlla il calendario e scrivici.",
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Come controllare la disponibilità?",
+        "a": "Consulta il calendario nella sezione Disponibilità e contattaci per confermare."
+      },
+      {
+        "q": "La casa si affitta interamente?",
+        "a": "Sì, la casa rurale si prenota interamente per garantire privacy."
+      },
+      {
+        "q": "È adatta a famiglie e gruppi?",
+        "a": "Sì, è perfetta per famiglie e gruppi che cercano una casa rurale a Granada."
+      },
+      {
+        "q": "Come prenotare?",
+        "a": "Scrivici su WhatsApp o tramite modulo per confermare la prenotazione."
+      }
+    ]
+  }
 }

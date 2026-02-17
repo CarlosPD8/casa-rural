@@ -10,7 +10,8 @@ import ContactForm from "@/components/ContactForm";
 import AvailabilityCalendar from "@/components/AvailabilityCalendar";
 import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
-import SeoSchema from "@/components/SeoSchema";
+//import SeoSchema from "@/components/SeoSchema";
+import SeoSchemaHome from "@/components/SeoSchemaHome";
 
 
 import { useLocale, useTranslations } from "next-intl";
@@ -77,7 +78,11 @@ export async function generateMetadata({
   };
 }
 
-export default function Home() {
+export default function Home({
+  params,
+}: {
+  params: { locale: string };
+}) {
   const locale = useLocale();
   const tHero = useTranslations("hero");
   const tAvailability = useTranslations("availabilityHome");
@@ -227,7 +232,7 @@ export default function Home() {
       </section>
 
       <Footer />
-      <SeoSchema />
+      <SeoSchemaHome locale={params.locale} />
     </main>
   );
 }

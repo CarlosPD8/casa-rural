@@ -12,21 +12,21 @@
   },
   "hero": {
     "badge": "Rural house in Granada",
-    "title": "Huerta del Medio Rural Home",
-    "subtitle": "Nature, calm and a charming getaway just minutes from Granada.",
+    "title": "Rural house in Granada Huerta del Medio",
+    "subtitle": "Rural house in Granada ideal for families and groups, with pool, garden and natural surroundings just minutes from Granada city.",
     "ctaAvailability": "Check availability",
     "ctaReviews": "Read reviews",
     "tags": [
       "Natural surroundings",
-      "Family friendly",
+      "Ideal for families",
       "Terrace & views",
       "Peaceful"
     ],
     "bullets": [
       "Comfortable and bright accommodation",
-      "Perfect setting to unwind",
-      "Close to Granada and hiking routes",
-      "Fast, friendly communication"
+      "Perfect place to relax",
+      "Near Granada and hiking routes",
+      "Friendly and fast communication"
     ]
   },
   "highlights": {
@@ -39,21 +39,24 @@
   },
   "house": {
     "title": "The house",
-    "intro": "A place designed to rest and enjoy the surroundings. Ideal for couples, families or small trips with friends.",
-    "sectionTitle": "Comfort with a rural touch",
-    "sectionBody": "Well-kept spaces, natural light and a practical layout so you feel at home from day one.",
-    "servicesTitle": "Amenities",
+    "intro": "Vivienda Rural Huerta del Medio is a rural house in Granada with 4 bedrooms, 2 full bathrooms and capacity for up to 10 guests. It has a spacious living room with air conditioning and pellet stove, fully equipped kitchen and private outdoor area with pool, barbecue and parking.",
+    "sectionTitle": "House layout",
+    "sectionBody": "The house has two floors. On the first floor you will find the living room, equipped kitchen and a full bathroom. On the second floor there are 4 bedrooms: two with double bed and terrace, and two with single beds. There is also a second full bathroom.",
+    "servicesTitle": "Services and amenities",
     "chips": [
-      "Fully equipped kitchen",
+      "Equipped kitchen",
       "Wi-Fi",
-      "A/C / heating",
-      "Nearby parking"
+      "Air conditioning / Pellet stove",
+      "Parking",
+      "Pool",
+      "Barbecue",
+      "Beer tap"
     ],
     "amenities": [
       "Bed linen and towels",
       "Full kitchenware",
-      "Outdoor area / terrace",
-      "Local tips and recommendations",
+      "Outdoor terrace",
+      "Local information and tips",
       "Flexible check-in (subject to availability)"
     ]
   },
@@ -63,15 +66,15 @@
     "items": [
       {
         "name": "Maria",
-        "text": "Very peaceful and cozy. Perfect to disconnect."
+        "text": "Very peaceful and cozy stay. Perfect to disconnect."
       },
       {
         "name": "Javier",
-        "text": "Spotless house and super fast communication."
+        "text": "The house was spotless and communication was very fast."
       },
       {
         "name": "Laura",
-        "text": "Great location to visit Granada and come back to quiet rest."
+        "text": "Great location to visit Granada and relax afterwards."
       }
     ]
   },
@@ -82,15 +85,15 @@
   "availability": {
     "publicTitle": "Availability calendar",
     "publicSubtitle": "Marked dates are booked. The rest are available.",
-    "publicNote": "Do the dates work for you? Message us on WhatsApp or use the form to confirm.",
+    "publicNote": "Do the dates fit? Contact us via WhatsApp or the form.",
     "legendAvailable": "Available",
     "legendBusy": "Booked",
     "refresh": "Refresh",
     "loading": "Loading…",
     "adminTitle": "Availability management",
-    "adminSubtitle": "Block date ranges or remove existing blocks.",
+    "adminSubtitle": "Block date ranges or remove blocks.",
     "adminFooterTip": "Select a date range to block it.",
-    "adminNotePlaceholder": "Note (optional): reason or details",
+    "adminNotePlaceholder": "Note (optional)",
     "adminBlockRange": "Block range",
     "adminBlockedTitle": "Blocked ranges",
     "adminEmpty": "No blocked ranges.",
@@ -98,27 +101,27 @@
   },
   "location": {
     "title": "Location",
-    "subtitle": "A perfect base to explore Granada and the natural surroundings.",
-    "mapTitle": "Rural house map"
+    "subtitle": "A rural house perfect to discover Granada and nature.",
+    "mapTitle": "House map"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Tell us your dates and we’ll reply as soon as possible.",
+    "subtitle": "Tell us your dates and we will reply soon.",
     "name": "Name",
     "email": "Email",
     "phoneOptional": "Phone (optional)",
-    "messagePlaceholder": "Message (dates, number of guests, questions…)",
+    "messagePlaceholder": "Message (dates, guests, questions…)",
     "send": "Send message",
     "sending": "Sending…",
-    "success": "✅ Message sent. Thank you! We’ll reply soon.",
-    "errorDefault": "Could not send. Please try again in a few minutes.",
-    "privacyNote": "By submitting this form you agree to the processing of your data so we can reply to your request."
+    "success": "✅ Message sent. Thank you!",
+    "errorDefault": "Could not send. Try again later.",
+    "privacyNote": "By sending this form you accept data processing to answer your request."
   },
   "footer": {
     "aria": "Footer",
-    "brandTitle": "Huerta del Medio Rural Home",
-    "brandSubtitle": "Granada · Nature and rest",
-    "brandBody": "Escape to a quiet setting and enjoy a comfortable stay near Granada.",
+    "brandTitle": "Vivienda Rural Huerta del Medio",
+    "brandSubtitle": "Granada · Nature & relaxation",
+    "brandBody": "Escape to a peaceful environment and enjoy a comfortable stay near Granada.",
     "ctaContact": "Contact",
     "ctaAvailability": "Availability",
     "sectionsTitle": "Sections",
@@ -130,7 +133,7 @@
     "infoLocationValue": "Granada (Spain)",
     "infoBookingTitle": "Bookings",
     "infoBookingValue": "WhatsApp or form",
-    "copyright": "© {year} Huerta del Medio Rural Home. All rights reserved.",
+    "copyright": "© {year} Vivienda Rural Huerta del Medio. All rights reserved.",
     "privacy": "Privacy",
     "cookies": "Cookies",
     "legal": "Legal notice"
@@ -138,11 +141,10 @@
   "whatsapp": {
     "aria": "Contact via WhatsApp",
     "label": "WhatsApp",
-    "message": "Hi! I’m interested in booking. Do you have availability? Thank you."
+    "message": "Hello, I'm interested in booking. Do you have availability? Thanks."
   },
   "admin": {
-  "title": "Admin panel",
-  "subtitle": "Manage availability by blocking or freeing date ranges."
-}
-
+    "title": "Admin panel",
+    "subtitle": "Manage availability by blocking or freeing dates."
+  }
 }
