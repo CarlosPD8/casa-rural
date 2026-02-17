@@ -19,10 +19,6 @@ function unauthorized() {
 }
 
 function isAdminPath(pathname: string) {
-  // Soporta:
-  // /admin, /api/admin
-  // /es/admin, /en/admin...
-  // /es/api/admin, /en/api/admin...
   const adminPrefixes = ["/admin", "/api/admin"];
   if (adminPrefixes.some((p) => pathname.startsWith(p))) return true;
 
@@ -35,6 +31,11 @@ function isAdminPath(pathname: string) {
 
 export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
+
+  // ✅ NO tocar rutas internas de Vercel (Analytics / Speed Insights, etc.)
+  if (pathname.startsWith("/_vercel")) {
+    return NextResponse.next();
+  }
 
   // 1) Proteger admin (antes de intl)
   if (isAdminPath(pathname)) {
@@ -50,16 +51,13 @@ export function middleware(req: NextRequest) {
     const [u, p] = decoded.split(":");
 
     if (u !== user || p !== pass) return unauthorized();
-    // ok -> seguimos
   }
 
-  // 2) Aplicar i18n para el resto (y también admin si ha pasado auth)
+  // 2) Aplicar i18n
   return intlMiddleware(req);
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  // ✅ EXCLUYE /_vercel además de /api y /_next
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
-
-
-
