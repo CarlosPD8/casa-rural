@@ -13,7 +13,7 @@
   "hero": {
     "badge": "Casa rural en Granada",
     "title": "Vivienda Rural Huerta del Medio",
-    "subtitle": "Naturaleza, calma y escapadas con encanto a un paso de Granada.",
+    "subtitle": "Casa rural en Granada ideal para familias y grupos, con piscina, jardín y entorno natural a pocos minutos del centro de Granada.",
     "ctaAvailability": "Ver disponibilidad",
     "ctaReviews": "Leer opiniones",
     "tags": [
@@ -46,12 +46,11 @@
     "chips": [
       "Cocina equipada",
       "Wi-Fi",
-      "Aire acondicionado / estufa de pellet",
-      "Parking cercano",
+      "Aire acondicionado / Estufa de pellet",
+      "Parking",
       "Piscina",
       "Barbacoa",
-      "Grifo de cerveza",
-      "Neveras"
+      "Grifo de cerveza"
     ],
     "amenities": [
       "Ropa de cama y toallas",
@@ -102,7 +101,7 @@
   },
   "location": {
     "title": "Ubicación",
-    "subtitle": "Una base perfecta para descubrir Granada y su entorno natural.",
+    "subtitle": "Una casa rural perfecta para descubrir Granada y su entorno natural.",
     "mapTitle": "Mapa de la casa rural"
   },
   "contact": {
