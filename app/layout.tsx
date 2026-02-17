@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { locales } from "@/i18n/request";
+import { Analytics } from "@vercel/analytics/next";
+
 
 function getBaseUrl() {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL;
@@ -30,7 +32,13 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body>{children}</body>
+      <body>
+        {children}
+
+        {/* ✅ Vercel Analytics (pageviews / visitors) */}
+        <Analytics />
+
+      </body>
     </html>
   );
 }
