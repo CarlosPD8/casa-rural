@@ -5,7 +5,6 @@ import { cookies } from "next/headers";
 import { locales } from "@/i18n/request";
 import { Analytics } from "@vercel/analytics/next";
 
-
 function getBaseUrl() {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL;
   if (explicit) return explicit.replace(/\/$/, "");
@@ -13,13 +12,14 @@ function getBaseUrl() {
   const vercel = process.env.VERCEL_URL;
   if (vercel) return `https://${vercel}`.replace(/\/$/, "");
 
-  // Fallback local
   return "http://localhost:3000";
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
 };
+
+type Locale = (typeof locales)[number];
 
 export default async function RootLayout({
   children,
@@ -28,16 +28,16 @@ export default async function RootLayout({
 }) {
   const cookieStore = await cookies();
   const cookieLocale = cookieStore.get("NEXT_LOCALE")?.value;
-  const lang = locales.includes(cookieLocale as any) ? cookieLocale : "es";
+
+  const lang: Locale = locales.includes(cookieLocale as Locale)
+    ? (cookieLocale as Locale)
+    : "es";
 
   return (
     <html lang={lang}>
       <body>
         {children}
-
-        {/* ✅ Vercel Analytics (pageviews / visitors) */}
         <Analytics />
-        
       </body>
     </html>
   );
