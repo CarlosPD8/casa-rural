@@ -3,31 +3,34 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/request";
 
 function getBaseUrl() {
+  // ✅ Mejor: define NEXT_PUBLIC_SITE_URL="https://www.huertadelmedio.com"
   const explicit = process.env.NEXT_PUBLIC_SITE_URL;
   if (explicit) return explicit.replace(/\/$/, "");
 
-  const vercel = process.env.VERCEL_URL;
-  if (vercel) return `https://${vercel}`.replace(/\/$/, "");
-
-  return "http://localhost:3000";
+  // ✅ En Vercel, VERCEL_URL suele venir sin protocolo y sin www.
+  // Mejor NO confiar en esto para canónica.
+  return "https://www.huertadelmedio.com";
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
-  const now = new Date();
 
-  const routes = locales.flatMap((locale) => {
+  // ✅ lastModified: siempre "ahora" en UTC y NUNCA en el futuro
+  const lastModified = new Date();
+
+  // Rutas por idioma
+  const routes: MetadataRoute.Sitemap = locales.flatMap((locale) => {
     return [
       {
         url: `${baseUrl}/${locale}`,
-        lastModified: now,
-        changeFrequency: "weekly" as const,
+        lastModified,
+        changeFrequency: "weekly",
         priority: 1,
       },
       {
         url: `${baseUrl}/${locale}/availability`,
-        lastModified: now,
-        changeFrequency: "daily" as const,
+        lastModified,
+        changeFrequency: "daily",
         priority: 0.8,
       },
     ];

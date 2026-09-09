@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function WhatsappButton() {
   const t = useTranslations("whatsapp");
 
-  const phone = "34670294712"; // sin espacios ni +
+  const phone = "34615483399"; // sin espacios ni +
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(t("message"))}`;
 
   return (
